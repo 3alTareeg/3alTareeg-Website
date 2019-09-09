@@ -14,4 +14,18 @@ router.get("/", (req, res) => {
 //   });
 // });
 
+router.post("/CreateUser", (req, res) => {
+  console.log(req.body);
+  mongo.createUser(req.body, result => {
+    res.json(result);
+  });
+});
+
+router.post("/getUsers", (req, res) => {
+  console.log(req.body);
+  mongo.getUsers(req.body, result => {
+    res.json(result);
+  });
+});
+
 module.exports = router;
