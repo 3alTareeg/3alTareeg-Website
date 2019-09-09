@@ -6,8 +6,8 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.use("/signIn", require("./servers/signIn"));
-app.use("/signUp", require("./servers/signUp"));
+app.use("/signUpCompanies", require("./servers/signUpCompanies"));
+app.use("/signUpDrivers", require("./servers/signUpDrivers"));
 app.use("/companies", require("./servers/companies"));
 app.use("/drivers", require("./servers/drivers"));
 app.use("/extra", require("./servers/extra"));

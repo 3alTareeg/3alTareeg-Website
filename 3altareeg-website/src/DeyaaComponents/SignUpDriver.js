@@ -4,12 +4,15 @@ import axios from "axios";
 class SignUp extends Component {
   state = {
     name: "",
+    plateNumber: "",
+    work: "",
     email: "",
     password: ""
   };
   render() {
     return (
       <>
+        <h1>Drivers</h1>
         <form
           onSubmit={async e => {
             e.preventDefault();
@@ -18,11 +21,13 @@ class SignUp extends Component {
             await this.setState({
               name: e.target.name.value,
               email: e.target.email.value,
-              password: e.target.password.value
+              password: e.target.password.value,
+              work: e.target.work.value,
+              plateNumber: e.target.plateNumber.value
             });
 
             let res = await axios.post(
-              "http://localhost:9000/signUp/CreateUser",
+              "http://localhost:9000/signUpDrivers/CreateUser",
               this.state
             );
             console.log(res.data);
@@ -42,6 +47,14 @@ class SignUp extends Component {
           <div>
             <label htmlFor="password">Password: </label>
             <input type="password" id="password" name="password" />
+          </div>
+          <div>
+            <label htmlFor="work">Work: </label>
+            <input type="text" id="work" name="work" />
+          </div>
+          <div>
+            <label htmlFor="plateNumber">Plate Number: </label>
+            <input type="text" id="plateNumber" name="plateNumber" />
           </div>
           <input type="submit" value="Sign Up" />
         </form>

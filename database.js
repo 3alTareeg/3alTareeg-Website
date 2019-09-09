@@ -20,14 +20,18 @@ db.once("open", function() {
 //   BlaBlaBla: Number
 // });
 
-let signInSchema = new mongoose.Schema({
-  email: String,
-  password: String
-});
-
-let signUpSchema = new mongoose.Schema({
+let signUpCompaniesSchema = new mongoose.Schema({
   name: String,
   email: String,
+  password: String,
+  address: String
+});
+
+let signUpDriversSchema = new mongoose.Schema({
+  name: String,
+  email: String,
+  plateNumber: String,
+  work: String,
   password: String
 });
 
@@ -47,16 +51,16 @@ let extra2Schema = new mongoose.Schema({
   blabla: String
 });
 
-let signIn = mongoose.model("signIn", signInSchema);
-let signUp = mongoose.model("signUp", signUpSchema);
+let signUpCompanies = mongoose.model("signUpCompanies", signUpCompaniesSchema);
+let signUpDrivers = mongoose.model("signUpDrivers", signUpDriversSchema);
 let companies = mongoose.model("companies", CompaniesSchema);
 let drivers = mongoose.model("drivers", DriversSchema);
 let extra = mongoose.model("extra", extraSchema);
 let extra2 = mongoose.model("extra2", extra2Schema);
 
 module.exports = {
-  signIn,
-  signUp,
+  signUpCompanies,
+  signUpDrivers,
   companies,
   drivers,
   extra,
