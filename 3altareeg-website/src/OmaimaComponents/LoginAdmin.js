@@ -23,7 +23,6 @@ export default class LoginAdmin extends Component{
   </Link>
 </form>
 
-     
 </>
         )
     }
