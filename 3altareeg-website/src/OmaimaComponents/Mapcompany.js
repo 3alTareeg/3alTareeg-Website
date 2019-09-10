@@ -20,6 +20,7 @@ export default class Mapcompany extends Component {
 
   
     updateCompany=(request,id)=>{
+      //today
       if(request===false)
           request=true
       console.log(request)
