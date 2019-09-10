@@ -2,7 +2,7 @@ const express = require("express");
 var router = express.Router();
 const mongo = require("../database/signUpCompanies");
 
-//To Reach this file, the link should be http://localhost:9000/signIn
+//To Reach this file, the link should be http://localhost:9000/signUpCompanies
 
 router.get("/", (req, res) => {
   res.send("signIn Router Working Fine");
@@ -27,5 +27,24 @@ router.post("/getUsers", (req, res) => {
 //     res.json(result);
 //   });
 // });
+ router.get('/signUpCompanies',(req,res)=>{
+   mongo.getCompany(result=>
+    res.json(result) )
+ })
+ router.get('/signUpDrivers',(req,res)=>{
+   console.log("Data for drivers")
+  mongo.getDriver(result=>
+   res.json(result) )
+})
+
+ router.put('/updateData',(req,res)=>{
+   console.log(req.body)
+ let newRequst=req.body
+ console.log(newRequst)
+   mongo.editRequst(newRequst ,(result)=>{
+     res.json(result)
+   })
+ })
+
 
 module.exports = router;

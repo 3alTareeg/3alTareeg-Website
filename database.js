@@ -24,7 +24,8 @@ let signUpCompaniesSchema = new mongoose.Schema({
   name: String,
   email: String,
   password: String,
-  address: String
+  address: String,
+  request: Boolean
 });
 
 let signUpDriversSchema = new mongoose.Schema({

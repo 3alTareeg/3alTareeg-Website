@@ -20,5 +20,49 @@ const getUsers = (user, cb) => {
     else cb(data);
   });
 };
+const getCompany=(cb)=>
+{
+  db.signUpCompanies.find({},( err, data)=>{
+    if (err) cb(err);
+    else cb(data);
+  }
+  )}
+  const getDriver=(cb)=>
+{
+  db.signUpDrivers.find({},( err, data)=>{
+    if (err) cb(err);
+    else cb(data);
+  }
+  )}
 
-module.exports = { createUser, getUsers };
+  const getAllUsers = (cb) => {
+    db.signUpCompanies.find({}, (err, data) => {
+      if (err) cb(err);
+      else cb(data);
+    });
+  };
+
+
+const editRequst=(newRequst,cb)=>{
+  console.log("ID",newRequst.id)
+  let x = {
+    _id: newRequst.id
+  }
+  db.signUpCompanies.updateOne({_id:newRequst.id},{$set:{"request" :newRequst.request}},
+  (err, data) => {
+    if (err) {
+      cb(err)
+    } else {
+     
+      getAllUsers(cb)
+    }
+  }
+  )
+}
+
+
+
+
+ 
+   
+module.exports = { createUser, getUsers,getCompany,getDriver,editRequst,getAllUsers };
