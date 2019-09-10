@@ -21,6 +21,7 @@ export default class Mapcompany extends Component {
   
     updateCompany=(request,id)=>{
       //today
+      let test=""
       if(request===false)
           request=true
       console.log(request)
