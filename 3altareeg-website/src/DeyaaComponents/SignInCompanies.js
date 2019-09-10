@@ -54,11 +54,11 @@ class SignInCompanies extends Component {
       // </>
 
       <>
-        <div className="SignInCompanies">
-          <div className="container">
-            <div className="d-flex justify-content-center h-100">
-              <div className="card x">
-                <div className="card-header">
+        <div class="SignInCompanies">
+          <div class="container">
+            <div class="d-flex justify-content-center h-100">
+              <div class="card x">
+                <div class="card-header">
                   <h3>Companies</h3>
                   <div className="d-flex justify-content-end social_icon">
                     <span>
