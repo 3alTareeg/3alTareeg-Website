@@ -19,7 +19,11 @@ export default class HomePage extends Component {
 <br/>
 <br/>
 <Header />
+
+
+
 <PageContent />
+
 <br/>
 {/* <Contact /> */}
 <HappyCustomer/>

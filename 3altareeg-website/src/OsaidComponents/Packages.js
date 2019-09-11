@@ -8,59 +8,99 @@ export default class Packages extends Component {
     boxShadow: "0px 13px 14px -1px rgba(0,0,0,0.75)"
   };
 
+
+  mouseOver =(id) => {
+    document.getElementById(`${id}`).style.border = "2px outset rgba(28,110,164,0.75)"; 
+  }
+
+  
+  mouseOut =(id) => {
+    document.getElementById(`${id}`).style.border = "none"; 
+  }
   render() {
     return (
       <div style={{ width: "80%", margin: "auto" }}>
-        <div class="card-deck">
-          <div class="card" style={this.cardStyle}>
-            <img src={require("./pic/10.png")} class="card-img-top" alt="..." />
+        <div className="card-deck">
 
-            <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+          <div className="card" id="soso" style={this.cardStyle} onMouseEnter={this.mouseOver.bind(this,"soso")} onMouseLeave={this.mouseOut.bind(this,"soso")}>
+            <img src={require("./pic/10.png")} className="card-img-top" alt="..." />
+
+            <div className="card-body">
+    <h5 className="card-title">Card title</h5>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">Cras justo odio</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Vestibulum at eros</li>
+  <ul className="list-group list-group-flush">
+    <li className="list-group-item">Cras justo odio</li>
+    <li className="list-group-item">Dapibus ac facilisis in</li>
+    <li className="list-group-item">Vestibulum at eros</li>
   </ul>
-  <div class="card-body">
-    <a href="#" class="btn btn-primary btn-lg">Card link</a>
+  <div className="card-body">
+    <a href="#" className="btn btn-primary btn-lg">Card link</a>
   </div>
           </div>
           
-          <div class="card" style={this.cardRecommand}>
-            <img src={require("./pic/20.png")} class="card-img-top" alt="..." />
-            <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div className="card" id="soso1" style={this.cardRecommand} onMouseEnter={this.mouseOver.bind(this,'soso1')} onMouseLeave={this.mouseOut.bind(this,'soso1')}>
+            <img src={require("./pic/20.png")} className="card-img-top" alt="..." />
+            <div className="card-body">
+    <h5 className="card-title">Card title</h5>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">Cras justo odio</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Vestibulum at eros</li>
+  <ul className="list-group list-group-flush">
+    <li className="list-group-item">Cras justo odio</li>
+    <li className="list-group-item">Dapibus ac facilisis in</li>
+    <li className="list-group-item">Vestibulum at eros</li>
   </ul>
-  <div class="card-body">
-    <a href="#" class="btn btn-primary btn-lg">Card link</a>
+  <div className="card-body">
+    <a href="#" className="btn btn-primary btn-lg">Card link</a>
   </div>
           </div>
-          <div class="card" style={this.cardStyle}>
-            <img src={require("./pic/30.png")} class="card-img-top" alt="..." />
-            <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div className="card" id="soso2" style={this.cardStyle} onMouseEnter={this.mouseOver.bind(this,'soso2')} onMouseLeave={this.mouseOut.bind(this,'soso2')}>
+            <img src={require("./pic/30.png")} className="card-img-top" alt="..." />
+            <div className="card-body">
+    <h5 className="card-title">Card title</h5>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">Cras justo odio</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Vestibulum at eros</li>
+  <ul className="list-group list-group-flush">
+    <li className="list-group-item">Cras justo odio</li>
+    <li className="list-group-item">Dapibus ac facilisis in</li>
+    <li className="list-group-item">Vestibulum at eros</li>
   </ul>
-  <div class="card-body">
-    <a href="#" class="btn btn-primary btn-lg">Card link</a>
+  <div className="card-body">
+    <a href="#" className="btn btn-primary btn-lg">Card link</a>
   </div>
           </div>
         </div>
       </div>
+
+
+
+
+
+
+
+/////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     );
   }
 }
