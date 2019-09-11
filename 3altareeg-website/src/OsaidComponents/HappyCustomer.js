@@ -79,7 +79,6 @@ export default class HappyCustomer extends Component {
     </div>
   </div>
 </div>
-
             </div>
             <br/>
             </>

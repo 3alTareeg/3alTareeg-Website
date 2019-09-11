@@ -33,7 +33,6 @@ export default class Contact extends Component {
                         class="form-control"
                         placeholder="Your name"
                       />
-
                     </div>
                   </div>
 
@@ -46,7 +45,6 @@ export default class Contact extends Component {
                         class="form-control"
                         placeholder="Your email"
                       />
-
                     </div>
                   </div>
                 </div>
@@ -62,7 +60,6 @@ export default class Contact extends Component {
                         placeholder="Subject"
 
                       />
-
                     </div>
                   </div>
                 </div>

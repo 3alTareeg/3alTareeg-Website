@@ -12,7 +12,6 @@ import HappyCustomer from './HappyCustomer'
 export default class HomePage extends Component {
     render() {
 
-
         return (
             <div>
 <NavBar />
