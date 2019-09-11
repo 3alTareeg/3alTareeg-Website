@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import "./Style/SignInDriver.css";
 
 class SignUp extends Component {
   state = {
@@ -60,10 +61,10 @@ class SignUp extends Component {
       //   </form>
       // </>
       <>
-        <div className="SignInCompanies">
+        <div className="SignInDriver">
           <div className="container">
             <div className="d-flex justify-content-center h-100">
-              <div className="card" style={{ height: "410px" }}>
+              <div className="card x" style={{ height: "410px" }}>
                 <div className="card-header">
                   <h3>Drivers</h3>
                   <div className="d-flex justify-content-end social_icon">

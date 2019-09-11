@@ -2,7 +2,7 @@ const db = require("../database");
 
 //db.model and then the method (find, create, etc..)
 const createUser = (user, cb) => {
-  db.signUpDrivers.create(user, (err, data) => {
+  db.signUpDrivers.create({ ...user, isAvailable: true }, (err, data) => {
     if (err) cb(err);
     else cb(data);
   });

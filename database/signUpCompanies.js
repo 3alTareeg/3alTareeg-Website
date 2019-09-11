@@ -2,7 +2,19 @@ const db = require("../database");
 
 //db.model and then the method (find, create, etc..)
 const createUser = (user, cb) => {
-  db.signUpCompanies.create(user, (err, data) => {
+  User = {
+    ...user,
+    order: false,
+    request: false,
+    price: 0,
+    productWeight: 0,
+    typeOfService: "none",
+    nameProduct: "none",
+    file: "none",
+    numberOfProducts: 0,
+    package: 0
+  };
+  db.signUpCompanies.create(User, (err, data) => {
     if (err) cb(err);
     else cb(data);
   });

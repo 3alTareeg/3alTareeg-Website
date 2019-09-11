@@ -54,7 +54,7 @@ class SignIn extends Component {
         <div className="SignInDriver">
           <div className="container">
             <div className="d-flex justify-content-center h-100">
-              <div className="card">
+              <div className="card x">
                 <div className="card-header">
                   <h3>Drivers</h3>
                   <div className="d-flex justify-content-end social_icon">

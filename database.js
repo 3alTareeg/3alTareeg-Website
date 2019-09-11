@@ -28,9 +28,12 @@ let signUpCompaniesSchema = new mongoose.Schema({
   order: Boolean,
   request: Boolean,
   price: Number,
-  weight: Number,
-  quantity: Number,
-  nars: Number
+  productWeight: Number,
+  typeOfService: String,
+  nameProduct: String,
+  file: String,
+  numberOfProducts: Number,
+  package: Number
 });
 
 let signUpDriversSchema = new mongoose.Schema({
@@ -38,7 +41,8 @@ let signUpDriversSchema = new mongoose.Schema({
   email: String,
   plateNumber: String,
   work: String,
-  password: String
+  password: String,
+  isAvailable: Boolean
 });
 
 let CompaniesSchema = new mongoose.Schema({
