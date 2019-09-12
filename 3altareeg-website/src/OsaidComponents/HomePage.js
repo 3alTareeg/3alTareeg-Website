@@ -25,6 +25,7 @@ export default class HomePage extends Component {
       found: false
     });
     this.props.location.state = await undefined;
+    window.localStorage.setItem('logedIn', 'false');
     this.props.history.push("./SignInCompanies");
   };
   static getDerivedStateFromProps(props, state) {
@@ -45,7 +46,7 @@ export default class HomePage extends Component {
   render() {
     // console.log(this.props.location.state);
     // console.log(this.props.location.state.name);
-    if (this.state.shouldpass === "false") {
+    if (this.state.shouldpass === "false" || localStorage.logedIn === "false") {
       //  return <Link To="/SignInCompanies"> Please Login</Link>;
       //   return null;
       return (

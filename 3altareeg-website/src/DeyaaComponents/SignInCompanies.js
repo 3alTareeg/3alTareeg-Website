@@ -101,6 +101,7 @@ class SignInCompanies extends Component {
                           PASSWORD: res.data[0].password,
                           ADDRESS: res.data[0].address
                         });
+                        window.localStorage.setItem("logedIn", "true");
                         this.props.history.push({
                           pathname: "/",
                           state: {
