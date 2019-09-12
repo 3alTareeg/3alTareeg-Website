@@ -11,6 +11,7 @@ import FormPage from "./AlfarComponents/FormPage";
 import HomePageAdmin from "./OmaimaComponents/HomePage";
 import MapCompanies from "./OmaimaComponents/MapCompanies";
 import MapDrivers from "./OmaimaComponents/MapDrivers";
+import LoginAdmin from "./OmaimaComponents/LoginAdmin";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Contact from "./OsaidComponents/Contact";
@@ -41,6 +42,8 @@ class App extends Component {
           <Route exact path="/HomeAdmin" component={HomePageAdmin} />
           <Route exact path="/Companies" component={MapCompanies} />
           <Route exact path="/Drivers" component={MapDrivers} />
+          <Route exact path="/LoginAdmin" component={LoginAdmin} />
+
         </Router>
         {/* <HomePage /> */}
       </>

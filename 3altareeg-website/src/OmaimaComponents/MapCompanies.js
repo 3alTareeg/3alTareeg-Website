@@ -59,18 +59,20 @@ export default class Mapcompany extends Component {
     const { companyList } = this.state;
     const { updateCompany } = this;
     return (
-      <div>
+      <>
         {console.log("", companyList)}
-        {companyList.map((company, idx) => {
-          return (
-            <Companies
-              key={idx}
-              company={company}
-              updateRequest={updateCompany}
-            />
-          );
-        })}
-      </div>
+        
+          {companyList.map((company, idx) => {
+            return (
+              <Companies
+                key={idx}
+                company={company}
+                updateRequest={updateCompany}
+              />
+            );
+          })}
+        
+      </>
     );
   }
 }

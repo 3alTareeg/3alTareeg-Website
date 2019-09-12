@@ -40,16 +40,18 @@ export default class Mapdrivers extends Component {
     const { driverList } = this.state;
     return (
       <>
-        {console.log("driver", driverList)}
-        {driverList.map((driver, idx) => {
-          return (
-            <Drivers
-              key={idx}
-              driver={driver}
-              updatAvaliable={this.updateDriver}
-            />
-          );
-        })}
+        <div style={{ backgroundColor: "#352d52" }}>
+          {console.log("driver", driverList)}
+          {driverList.map((driver, idx) => {
+            return (
+              <Drivers
+                key={idx}
+                driver={driver}
+                updatAvaliable={this.updateDriver}
+              />
+            );
+          })}
+        </div>
       </>
     );
   }
