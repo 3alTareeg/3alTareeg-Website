@@ -31,6 +31,24 @@ router.post("/AlfarComponents", (req, res) => {
   });
   // res.json("WORK")
 });
+
+router.get("/signUpCompanies", (req, res) => {
+  console.log("getdata");
+  mongo.getCompany(result => res.json(result));
+});
+router.get("/signUpDrivers", (req, res) => {
+  console.log("Data for drivers");
+  mongo.getDriver(result => res.json(result));
+});
+router.put("/updateData", (req, res) => {
+  //  console.log(req.body)
+  let newRequst = req.body;
+  console.log("SERVER", newRequst);
+  mongo.editRequst(newRequst, result => {
+    res.json(result);
+  });
+});
+
 // router.get("/blabla", (req, res) => {
 //   mongo.blablaFunction(result => {
 //     res.json(result);

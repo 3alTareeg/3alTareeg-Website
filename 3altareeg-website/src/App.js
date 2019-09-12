@@ -8,6 +8,8 @@ import SignInCompanies from "./DeyaaComponents/SignInCompanies";
 import HomePageLogin from "./DeyaaComponents/Homepage";
 import HomePage from "./OsaidComponents/HomePage";
 import FormPage from "./AlfarComponents/FormPage";
+import HomePageAdmin from "./OmaimaComponents/HomePage";
+import MapCompanies from "./OmaimaComponents/MapCompanies";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Contact from "./OsaidComponents/Contact";
@@ -35,6 +37,8 @@ class App extends Component {
           <Route exact path="/" component={HomePage} />
           <Route exact path="/Contact" component={Contact} />
           <Route exact path="/FormPage" component={FormPage} />
+          <Route exact path="/HomeAdmin" component={HomePageAdmin} />
+          <Route exact path="/Companies" component={MapCompanies} />
         </Router>
         {/* <HomePage /> */}
       </>

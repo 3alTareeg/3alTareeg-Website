@@ -61,4 +61,52 @@ let addOrder = (user, cb) => {
   );
 };
 
-module.exports = { createUser, getUsers, addOrder };
+// __________________
+
+const getCompany = cb => {
+  db.signUpCompanies.find({}, (err, data) => {
+    if (err) cb(err);
+    else cb(data);
+  });
+};
+const getDriver = cb => {
+  db.signUpDrivers.find({}, (err, data) => {
+    if (err) cb(err);
+    else cb(data);
+  });
+};
+const getAllUsers = cb => {
+  db.signUpCompanies.find({}, (err, data) => {
+    if (err) cb(err);
+    else cb(data);
+  });
+};
+const editRequst = (newRequst, cb) => {
+  console.log("ID", newRequst.id);
+  console.log("___", newRequst);
+  console.log("ORDER DATABASE______", newRequst.order);
+  let x = {
+    _id: newRequst.id
+  };
+  db.signUpCompanies.update(
+    { _id: newRequst.id },
+    { $set: { request: newRequst.request, order: newRequst.order } },
+    (err, data) => {
+      if (err) {
+        cb(err);
+      } else {
+        getAllUsers(cb);
+      }
+    }
+  );
+};
+
+module.exports = {
+  createUser,
+  getUsers,
+  addOrder,
+  getCompany,
+  getDriver,
+  getAllUsers,
+  editRequst
+};
