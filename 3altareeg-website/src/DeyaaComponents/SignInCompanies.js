@@ -7,7 +7,11 @@ class SignInCompanies extends Component {
   state = {
     name: "",
     email: "",
-    valid: false
+    valid: false,
+    NAME: "",
+    EMAIL: "",
+    PASSWORD: "",
+    ADDRESS: ""
   };
   clear = e => {};
   render() {
@@ -85,17 +89,35 @@ class SignInCompanies extends Component {
                         "http://localhost:9000/signUpCompanies/getUsers",
                         this.state
                       );
-                      console.log(res.data);
-                      if (res.data.length !== 0)
-                        await this.setState({ valid: true });
-                      else await this.setState({ valid: false });
+                      console.log("RESPONSE", res.data);
+                      // console.log("NAME", res.data[0].name);
+                      // console.log("EMAIL", res.data[0].email);
+
+                      if (res.data.length !== 0) {
+                        await this.setState({
+                          valid: true,
+                          NAME: res.data[0].name,
+                          EMAIL: res.data[0].email,
+                          PASSWORD: res.data[0].password,
+                          ADDRESS: res.data[0].address
+                        });
+                        this.props.history.push({
+                          pathname: "/",
+                          state: {
+                            name: this.state.NAME,
+                            email: this.state.EMAIL,
+                            password: this.state.PASSWORD,
+                            address: this.state.ADDRESS
+                          }
+                        });
+                      } else await this.setState({ valid: false });
                       //       // e.target.name.value = "";
                       //       // e.target.password.value = "";
                       //       this.clear(e);
                     }}
                   >
                     <div className="input-group form-group">
-                      <div className="input-group-prepend">
+                      <div className="input-group-prepend u">
                         <span className="input-group-text">
                           <i className="fas fa-user"></i>
                         </span>

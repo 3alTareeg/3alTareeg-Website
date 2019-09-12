@@ -5,9 +5,8 @@ import SignUpDriver from "./DeyaaComponents/SignUpDriver";
 import SignInDriver from "./DeyaaComponents/SignInDriver";
 import SignUpCompanies from "./DeyaaComponents/SignUpCompanies";
 import SignInCompanies from "./DeyaaComponents/SignInCompanies";
-import LoginPage from "./DeyaaComponents/Homepage";
+import HomePageLogin from "./DeyaaComponents/Homepage";
 import HomePage from "./OsaidComponents/HomePage";
-
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Contact from "./OsaidComponents/Contact";
@@ -27,15 +26,13 @@ class App extends Component {
         <SignUpDriver />
         <SignInDriver /> */}
         <Router>
-          <Route exact path="/Login" component={LoginPage} />
+          <Route exact path="/Login" component={HomePageLogin} />
           <Route exact path="/SignInCompanies" component={SignInCompanies} />
           <Route exact path="/SignUpCompanies" component={SignUpCompanies} />
           <Route exact path="/SignInDrivers" component={SignInDriver} />
           <Route exact path="/SignUpDrivers" component={SignUpDriver} />
           <Route exact path="/" component={HomePage} />
           <Route exact path="/Contact" component={Contact} />
-
-
         </Router>
         {/* <HomePage /> */}
       </>

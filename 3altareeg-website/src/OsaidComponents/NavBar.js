@@ -1,5 +1,7 @@
 import React from "react";
-export default function NavBar() {
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+
+export default function NavBar(props) {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -42,7 +44,7 @@ export default function NavBar() {
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#pablo" style={{color:"#0cbd9d"}}>
+                <a class="nav-link" href="#pablo" style={{ color: "#0cbd9d" }}>
                   <i
                     class="fas fa-user-circle"
                     style={{ fontSize: "1.3em" }}
@@ -51,14 +53,18 @@ export default function NavBar() {
                 </a>
               </li>
 
-              <li class="nav-item" >
-                <a class="nav-link" href="#pablo" style={{color:"red"}}>
+              <li class="nav-item">
+                <p
+                  class="nav-link"
+                  onClick={() => props.logOut()}
+                  style={{ color: "red" }}
+                >
                   <i
                     class="fas fa-sign-out-alt"
                     style={{ fontSize: "1.3em" }}
                   ></i>
                   <p> &nbsp; Logout</p>
-                </a>
+                </p>
               </li>
             </ul>
           </div>

@@ -73,7 +73,7 @@
 	margin-bottom: 10px;
 	font-weight: 500;
 }
-.btn,
+
 .navbar .navbar-nav>a.btn {
     border-width: 2px;
     font-weight: 400;
@@ -88,7 +88,7 @@
     color: #FFFFFF;
 }
 
-.btn:hover,
+/* .btn:hover, */
 .btn:focus,
 .btn:not(:disabled):not(.disabled):active,
 .btn:not(:disabled):not(.disabled):active:focus,
@@ -231,7 +231,7 @@
     padding: 15px 48px;
 }
 
-.form-control::-moz-placeholder {
+/* .form-control::-moz-placeholder {
     color: #888888;
     opacity: 0.8;
     filter: alpha(opacity=80);
@@ -284,9 +284,9 @@
     border: 1px solid #f96332;
     border-left: none;
     background-color: transparent;
-}
+} */
 
-.input-group.input-lg .form-control {
+/* .input-group.input-lg .form-control {
     padding: 14px 18px;
 }
 
@@ -400,7 +400,7 @@ textarea.form-control:active {
     border-left: none;
     border-top: none;
     border-right: none;
-}
+} */
 
 button,
 input,
