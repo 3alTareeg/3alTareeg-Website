@@ -27,7 +27,7 @@ export default class Home extends Component {
                 <div class="emptybar"></div>
                 <div class="filledbar"></div>
               </div>
-              <Link to="/map2">
+              <Link to="/Drivers">
                 <div class="circlehome">
                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
                     <circle class="stroke" cx="60" cy="60" r="50" />

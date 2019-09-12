@@ -10,6 +10,7 @@ import HomePage from "./OsaidComponents/HomePage";
 import FormPage from "./AlfarComponents/FormPage";
 import HomePageAdmin from "./OmaimaComponents/HomePage";
 import MapCompanies from "./OmaimaComponents/MapCompanies";
+import MapDrivers from "./OmaimaComponents/MapDrivers";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Contact from "./OsaidComponents/Contact";
@@ -39,6 +40,7 @@ class App extends Component {
           <Route exact path="/FormPage" component={FormPage} />
           <Route exact path="/HomeAdmin" component={HomePageAdmin} />
           <Route exact path="/Companies" component={MapCompanies} />
+          <Route exact path="/Drivers" component={MapDrivers} />
         </Router>
         {/* <HomePage /> */}
       </>

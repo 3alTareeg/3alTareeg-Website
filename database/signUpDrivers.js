@@ -21,4 +21,26 @@ const getUsers = (user, cb) => {
   });
 };
 
-module.exports = { createUser, getUsers };
+const getAllUsers = cb => {
+  db.signUpDrivers.find({}, (err, data) => {
+    if (err) cb(err);
+    else cb(data);
+  });
+};
+
+const editAvaliable = cb => {
+  // console.log(newAvaliable)
+  db.signUpDrivers.updateOne(
+    { isAvailable: true },
+    { $set: { isAvailable: false } },
+    (err, data) => {
+      if (err) {
+        cb(err);
+      } else {
+        getAllUsers(cb);
+      }
+    }
+  );
+};
+
+module.exports = { createUser, getUsers, editAvaliable, getAllUsers };

@@ -45,7 +45,7 @@ let addOrder = (user, cb) => {
         price: user.price,
         productWeight: user.productWeight,
         numberOfProducts: user.numberOfProducts,
-        package: user.package,
+        Package: user.package,
         file: user.file
       }
     },

@@ -33,7 +33,7 @@ let signUpCompaniesSchema = new mongoose.Schema({
   nameProduct: String,
   file: String,
   numberOfProducts: Number,
-  package: Number
+  Package: Number
 });
 
 let signUpDriversSchema = new mongoose.Schema({

@@ -28,4 +28,13 @@ router.post("/getUsers", (req, res) => {
   });
 });
 
+router.put("/signUpDrivers", (req, res) => {
+  // console.log(req.body)
+  // let newAvaliable=req.body
+  // console.log(newAvaliable)
+  mongo.editAvaliable(result => {
+    res.json(result);
+  });
+});
+
 module.exports = router;

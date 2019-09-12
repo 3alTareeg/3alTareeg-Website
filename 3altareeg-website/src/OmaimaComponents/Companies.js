@@ -2,7 +2,7 @@ import React, { Component } from "react";
 export default class Companies extends Component {
   render() {
     const { updateRequest } = this.props;
-    const { name, request, order, _id } = this.props.company;
+    const { name, request, order, _id, Package } = this.props.company;
     console.log("order", order);
     console.log("name", name);
     console.log("request", request);
@@ -30,7 +30,13 @@ export default class Companies extends Component {
                   <input
                     type="checkbox"
                     name="check"
-                    onChange={updateRequest.bind(this, request, order, _id, 2)}
+                    onChange={updateRequest.bind(
+                      this,
+                      request,
+                      order,
+                      _id,
+                      Package
+                    )}
                   />
                 </div>
               </div>
