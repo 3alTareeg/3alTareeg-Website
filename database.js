@@ -28,7 +28,7 @@ let signUpCompaniesSchema = new mongoose.Schema({
   order: Boolean,
   request: Boolean,
   price: Number,
-  productWeight: Number,
+  productWeight: String,
   typeOfService: String,
   nameProduct: String,
   file: String,

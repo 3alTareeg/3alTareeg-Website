@@ -1,0 +1,52 @@
+.Far {
+  height: 900px;
+  /* margin-bottom: 20px; */
+  overflow: hidden;
+}
+
+.Far body {
+  background-color: #25274d;
+  /* height: 100vh; */
+  margin-bottom: 30px;
+}
+.Far .contact {
+  padding: 4%;
+  height: 400px;
+}
+.Far .col-md-3 {
+  background: #ff9b00;
+  padding: 4%;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.Far .contact-info {
+  margin-top: 10%;
+}
+.Far .contact-info img {
+  margin-bottom: 15%;
+}
+.Far .contact-info h2 {
+  margin-bottom: 10%;
+}
+.Far .col-md-9 {
+  background: #fff;
+  padding: 3%;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border: solid 1px black;
+}
+.Far .contact-form label {
+  font-weight: 600;
+}
+.Far .contact-form button {
+  background: #25274d;
+  color: #fff;
+  font-weight: 600;
+  width: 25%;
+}
+.Far .contact-form button:focus {
+  box-shadow: none;
+}
+button.close {
+display: none;
+}

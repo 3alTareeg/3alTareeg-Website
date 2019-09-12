@@ -22,6 +22,15 @@ router.post("/getUsers", (req, res) => {
   });
 });
 
+router.post("/AlfarComponents", (req, res) => {
+  const user = req.body;
+  console.log("SERVER", user);
+  mongo.addOrder(user, response => {
+    console.log("RESPONSE", response);
+    res.json(response);
+  });
+  // res.json("WORK")
+});
 // router.get("/blabla", (req, res) => {
 //   mongo.blablaFunction(result => {
 //     res.json(result);

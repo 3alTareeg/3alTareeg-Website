@@ -21,17 +21,16 @@ export default class HomePage extends Component {
   logOut = async () => {
     console.log("LOGOUT");
     await this.setState({
-      shouldpass: "false",
-      found: false
+      shouldpass: "false"
     });
     this.props.location.state = await undefined;
-    window.localStorage.setItem('logedIn', 'false');
+    window.localStorage.setItem("logedIn", "false");
     this.props.history.push("./SignInCompanies");
   };
   static getDerivedStateFromProps(props, state) {
     console.log(props);
     let newState;
-    if (props.location.state === undefined && state.found === false)
+    if (props.location.state === undefined)
       newState = {
         shouldpass: "false"
       };
@@ -69,6 +68,8 @@ export default class HomePage extends Component {
           <PageContent
             companyName={this.props.location.state.name}
             companyAddress={this.props.location.state.address}
+            companyEmail={this.props.location.state.email}
+            companyPassword={this.props.location.state.password}
           />
 
           <br />

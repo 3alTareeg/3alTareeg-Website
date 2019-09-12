@@ -33,4 +33,32 @@ const getUsers = (user, cb) => {
   });
 };
 
-module.exports = { createUser, getUsers };
+let addOrder = (user, cb) => {
+  console.log("DATABASE", user);
+  db.signUpCompanies.updateOne(
+    { name: user.name },
+    {
+      $set: {
+        order: true,
+        typeOfService: user.typeOfService,
+        nameProduct: user.nameProduct,
+        price: user.price,
+        productWeight: user.productWeight,
+        numberOfProducts: user.numberOfProducts,
+        package: user.package,
+        file: user.file
+      }
+    },
+    (err, data) => {
+      if (err) {
+        console.log(data);
+        cb(err);
+      } else {
+        console.log(data);
+        cb(data);
+      }
+    }
+  );
+};
+
+module.exports = { createUser, getUsers, addOrder };

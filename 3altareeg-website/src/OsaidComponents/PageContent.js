@@ -29,6 +29,8 @@ export default function PageContent(props) {
       <Packages
         companyName={props.companyName}
         companyAddress={props.companyAddress}
+        companyEmail={props.companyEmail}
+        companyPassword={props.companyPassword}
       />
     </div>
   );

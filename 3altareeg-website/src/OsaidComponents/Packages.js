@@ -59,11 +59,13 @@ export default class Packages extends Component {
                 //   />
                 // )}
                 to={{
-                  pathname: "/Contact",
+                  pathname: "/FormPage",
                   state: {
                     package: 10,
                     companyName: this.props.companyName,
-                    companyAddress: this.props.companyAddress
+                    companyAddress: this.props.companyAddress,
+                    companyEmail: this.props.companyEmail,
+                    companyPassword: this.props.companyPassword
                   }
                 }}
               >
@@ -99,11 +101,13 @@ export default class Packages extends Component {
             <div className="card-body">
               <Link
                 to={{
-                  pathname: "/Contact",
+                  pathname: "/FormPage",
                   state: {
                     package: 20,
                     companyName: this.props.companyName,
-                    companyAddress: this.props.companyAddress
+                    companyAddress: this.props.companyAddress,
+                    companyEmail: this.props.companyEmail,
+                    companyPassword: this.props.companyPassword
                   }
                 }}
                 // href="#"
@@ -140,11 +144,13 @@ export default class Packages extends Component {
             <div className="card-body">
               <Link
                 to={{
-                  pathname: "/Contact",
+                  pathname: "/FormPage",
                   state: {
                     package: 30,
                     companyName: this.props.companyName,
-                    companyAddress: this.props.companyAddress
+                    companyAddress: this.props.companyAddress,
+                    companyEmail: this.props.companyEmail,
+                    companyPassword: this.props.companyPassword
                   }
                 }}
                 // href="#"
