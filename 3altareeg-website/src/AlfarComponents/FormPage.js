@@ -57,11 +57,13 @@ export default class Checkout extends Component {
             <div class="col-md-3">
               <div class="contact-info">
                 <img
-                  src="https://image.ibb.co/kUASdV/contact-image.png"
+                  src={require(`../OsaidComponents/pic/${this.props.location.state.package}.png`)}
                   alt="image"
+                  // style={{ border: " solid 1px" }}
+                  className="rounded-circle rounded-lg"
                 />
-                <h2>Contact Us</h2>
-                <h4>We would love to hear from you !</h4>
+                <h2>{this.props.location.state.package} Car Package!</h2>
+                <h4>We would love to work with you &#x2764;</h4>
               </div>
             </div>
             <div class="col-md-9">
@@ -189,7 +191,7 @@ export default class Checkout extends Component {
                     </button>
                     <Link
                       to={{
-                        pathname: "/",
+                        pathname: "/HomeCompanies",
                         state: {
                           name: this.props.location.state.companyName,
                           address: this.props.location.state.companyAddress,

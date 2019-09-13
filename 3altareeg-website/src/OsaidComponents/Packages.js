@@ -65,7 +65,9 @@ export default class Packages extends Component {
                     companyName: this.props.companyName,
                     companyAddress: this.props.companyAddress,
                     companyEmail: this.props.companyEmail,
-                    companyPassword: this.props.companyPassword
+                    companyPassword: this.props.companyPassword,
+                    Image:
+                      "C:/Orange/3alTareeg-Website/3altareeg-website/src/OsaidComponents/pic/10.png"
                   }
                 }}
               >

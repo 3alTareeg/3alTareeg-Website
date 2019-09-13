@@ -8,6 +8,7 @@ class SignInCompanies extends Component {
     name: "",
     email: "",
     valid: false,
+    password: "",
     NAME: "",
     EMAIL: "",
     PASSWORD: "",
@@ -103,7 +104,7 @@ class SignInCompanies extends Component {
                         });
                         window.localStorage.setItem("logedIn", "true");
                         this.props.history.push({
-                          pathname: "/",
+                          pathname: "/HomeCompanies",
                           state: {
                             name: this.state.NAME,
                             email: this.state.EMAIL,
@@ -128,6 +129,7 @@ class SignInCompanies extends Component {
                         className="form-control"
                         placeholder="Email"
                         name="email"
+                        required
                       />
                     </div>
                     <div className="input-group form-group">
@@ -141,12 +143,22 @@ class SignInCompanies extends Component {
                         className="form-control"
                         placeholder="Password"
                         name="password"
+                        required
                       />
                     </div>
                     <div className="row align-items-center remember">
                       <input type="checkbox" />
                       Remember Me
                     </div>
+                    {this.state.email !== "" || this.state.password !== "" ? (
+                      this.state.valid ? (
+                        <span style={{ color: "white" }}>VALID </span>
+                      ) : (
+                        <span style={{ color: "red", textAlign: "center" }}>
+                          <h6>Your email or password is incorrect</h6>
+                        </span>
+                      )
+                    ) : null}
                     <div className="form-group">
                       <input
                         type="submit"
@@ -164,13 +176,6 @@ class SignInCompanies extends Component {
                   <div className="d-flex justify-content-center">
                     <a href="#">Forgot your password?</a>
                   </div>
-                  {this.state.valid ? (
-                    <span style={{ color: "white" }}>VALID </span>
-                  ) : (
-                    <span style={{ color: "red" }}>
-                      Your email or password is incorrect
-                    </span>
-                  )}
                 </div>
               </div>
             </div>

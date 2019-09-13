@@ -12,6 +12,7 @@ import HomePageAdmin from "./OmaimaComponents/HomePage";
 import MapCompanies from "./OmaimaComponents/MapCompanies";
 import MapDrivers from "./OmaimaComponents/MapDrivers";
 import LoginAdmin from "./OmaimaComponents/LoginAdmin";
+import DriverHome from "./OsaidComponents/DriverHome";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Contact from "./OsaidComponents/Contact";
@@ -31,19 +32,19 @@ class App extends Component {
         <SignUpDriver />
         <SignInDriver /> */}
         <Router>
-          <Route exact path="/Login" component={HomePageLogin} />
+          <Route exact path="/" component={HomePageLogin} />
           <Route exact path="/SignInCompanies" component={SignInCompanies} />
           <Route exact path="/SignUpCompanies" component={SignUpCompanies} />
           <Route exact path="/SignInDrivers" component={SignInDriver} />
           <Route exact path="/SignUpDrivers" component={SignUpDriver} />
-          <Route exact path="/" component={HomePage} />
+          <Route exact path="/HomeCompanies" component={HomePage} />
           <Route exact path="/Contact" component={Contact} />
           <Route exact path="/FormPage" component={FormPage} />
           <Route exact path="/HomeAdmin" component={HomePageAdmin} />
           <Route exact path="/Companies" component={MapCompanies} />
           <Route exact path="/Drivers" component={MapDrivers} />
           <Route exact path="/LoginAdmin" component={LoginAdmin} />
-
+          <Route exact path="/HomeDriver" component={DriverHome} />
         </Router>
         {/* <HomePage /> */}
       </>

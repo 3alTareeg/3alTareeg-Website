@@ -1432,3 +1432,230 @@ img {
   font-weight: normal;
   font-style: normal;
 }
+
+@import url(http://fonts.googleapis.com/css?family=Lato:400, 700);
+.driver body {
+  font-family: "Lato", "sans-serif";
+}
+.driver .profile {
+  min-height: 355px;
+  display: inline-block;
+}
+.driver figcaption.ratings {
+  margin-top: 20px;
+}
+.driver figcaption.ratings a {
+  color: #f1c40f;
+  font-size: 11px;
+}
+.driver figcaption.ratings a:hover {
+  color: #f39c12;
+  text-decoration: none;
+}
+.driver .divider {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.driver .emphasis {
+  border-top: 4px solid transparent;
+}
+.driver .emphasis:hover {
+  border-top: 4px solid #1abc9c;
+}
+.driver .emphasis h2 {
+  margin-bottom: 0;
+}
+.driver span.tags {
+  background: #1abc9c;
+  border-radius: 2px;
+  color: #f5f5f5;
+  font-weight: bold;
+  padding: 2px 4px;
+}
+.driver .dropdown-menu {
+  background-color: #34495e;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  width: 250px;
+  margin-left: -125px;
+  left: 50%;
+}
+.driver .dropdown-menu .divider {
+  background: none;
+}
+.driver .dropdown-menu > li > a {
+  color: #f5f5f5;
+}
+.driver .dropup .dropdown-menu {
+  margin-bottom: 10px;
+}
+.driver .dropup .dropdown-menu:before {
+  content: "";
+  border-top: 10px solid #34495e;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -10px;
+  z-index: 10;
+}
+.driver span {
+  cursor: pointer;
+}
+.number {
+  margin: 100px;
+}
+.driver .minus,
+.plus {
+  width: 20px;
+  height: 20px;
+  background: #f2f2f2;
+  border-radius: 4px;
+  padding: 8px 5px 8px 5px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+.driver input {
+  height: 34px;
+  width: 100px;
+  text-align: center;
+  font-size: 26px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.list-group.list-group-flush {
+  margin: auto;
+}
+
+/* ____CONTACT_____ */
+.CONTACT .pb-100 {
+  padding-bottom: 100px;
+}
+.CONTACT .pt-100 {
+  padding-top: 100px;
+}
+.CONTACT .mb-100 {
+  margin-bottom: 100px;
+}
+.CONTACT a {
+  text-decoration: none;
+  color: #333;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.CONTACT .section-title {
+  position: relative;
+}
+.CONTACT .section-title p {
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+.CONTACT .section-title h4 {
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: capitalize;
+  position: relative;
+  padding-bottom: 20px;
+  display: inline-block;
+}
+.CONTACT .section-title h4::before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 2px;
+  background-color: #d8d8d8;
+  bottom: 0;
+  left: 50%;
+  margin-left: -40px;
+}
+.CONTACT .section-title h4::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #ff7200;
+  left: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -25px;
+}
+.CONTACT .contact {
+  background-image: url("http://infinityflamesoft.com/html/abal-preview/assets/img/contact_back.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+.CONTACT .contact-form input,
+textarea {
+  width: 100%;
+  border: 1px solid #555;
+  padding: 5px 10px;
+  text-transform: capitalize;
+  margin-top: 15px;
+  background-color: transparent;
+  color: #fff;
+}
+.CONTACT .contact:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #333;
+  z-index: -1;
+  opacity: 0.85;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+}
+.CONTACT .single-contact {
+  text-align: left;
+  position: relative;
+  padding-left: 70px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+.CONTACT .single-contact i.fa {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: #ff7200;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 3px;
+}
+.CONTACT .single-contact h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.CONTACT .single-contact p {
+  font-size: 15px;
+  font-weight: 400;
+}
+.CONTACT .contact-form input[type="submit"] {
+  background-color: #ff7200;
+  border: 0px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.CONTACT .contact-form input[type="submit"]:hover {
+  background-color: #cc5b00;
+}
+.CONTACT .contact-form input:focus,
+textarea:focus {
+  border-color: #cc5b00;
+}

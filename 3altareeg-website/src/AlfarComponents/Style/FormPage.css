@@ -14,7 +14,8 @@
   height: 400px;
 }
 .Far .col-md-3 {
-  background: #ff9b00;
+  /* background: #ff9b00; */
+  background: #33c6ff;
   padding: 4%;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
@@ -48,5 +49,9 @@
   box-shadow: none;
 }
 button.close {
-display: none;
+  display: none;
+}
+
+.Far .rounded-circle {
+  border-radius: 35% !important;
 }

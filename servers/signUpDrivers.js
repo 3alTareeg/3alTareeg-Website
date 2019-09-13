@@ -29,10 +29,10 @@ router.post("/getUsers", (req, res) => {
 });
 
 router.put("/signUpDrivers", (req, res) => {
-  // console.log(req.body)
+  console.log("BODY SERVER", req.body);
   // let newAvaliable=req.body
   // console.log(newAvaliable)
-  mongo.editAvaliable(result => {
+  mongo.editAvaliable(req.body, result => {
     res.json(result);
   });
 });

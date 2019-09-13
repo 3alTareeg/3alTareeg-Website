@@ -18,13 +18,24 @@ export default class Mapcompany extends Component {
         console.log(err);
       });
   };
-  updateCompany = (request, order, id, Package) => {
+  updateCompany = (
+    request,
+    order,
+    id,
+    Package,
+    nameProduct,
+    productWeight,
+    file
+  ) => {
     console.log("Executed");
     console.log("requestREACT", request);
     console.log("orderREACT", order);
     console.log("Package", Package);
-    if (request === false && order === true) {
-      request = true;
+    console.log("nameProduct", nameProduct);
+    console.log("productWeight", productWeight);
+    console.log("file", file);
+
+    if (order === true) {
       order = false;
     }
     console.log("requestREACT", request);
@@ -46,7 +57,11 @@ export default class Mapcompany extends Component {
       });
     for (var i = 0; i < Package; i++)
       axios
-        .put(`http://localhost:9000/signUpDrivers/signUpDrivers`)
+        .put(`http://localhost:9000/signUpDrivers/signUpDrivers`, {
+          nameProduct,
+          productWeight,
+          file
+        })
         .then(response => {
           this.setState({ driverList: response.data });
           console.log("response", response.data);
@@ -61,7 +76,11 @@ export default class Mapcompany extends Component {
     return (
       <>
         {console.log("", companyList)}
-        
+        <div
+          className="container"
+          style={{ border: "1px solid rgba(0,0,0,.125)" }}
+        >
+          <h1 style={{ textAlign: "center" }}>Companies Requests</h1>
           {companyList.map((company, idx) => {
             return (
               <Companies
@@ -71,7 +90,7 @@ export default class Mapcompany extends Component {
               />
             );
           })}
-        
+        </div>
       </>
     );
   }

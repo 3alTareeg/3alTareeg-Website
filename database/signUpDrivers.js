@@ -28,15 +28,23 @@ const getAllUsers = cb => {
   });
 };
 
-const editAvaliable = cb => {
-  // console.log(newAvaliable)
+const editAvaliable = (info, cb) => {
+  console.log("DATABASE INFO", info);
   db.signUpDrivers.updateOne(
     { isAvailable: true },
-    { $set: { isAvailable: false } },
+    {
+      $push: {
+        nameProduct: info.nameProduct,
+        productWeight: info.productWeight,
+        file: info.file
+      },
+      $set: { isAvailable: false }
+    },
     (err, data) => {
       if (err) {
         cb(err);
       } else {
+        console.log("DATABASE DATA", data);
         getAllUsers(cb);
       }
     }

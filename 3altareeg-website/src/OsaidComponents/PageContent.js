@@ -9,8 +9,8 @@ export default function PageContent(props) {
         <div class="container">
           <div class="row">
             <div class="col-md-8 ml-auto mr-auto text-center">
-              <h2 class="title">Who we are?</h2>
-              <h5 class="description">
+              <h1>Who we are?</h1>
+              <h5 class="description" id="about" name="about">
                 According to the National Oceanic and Atmospheric
                 Administration, Ted, Scambos, NSIDClead scentist, puts the
                 potentially record low maximum sea ice extent tihs year down to
@@ -24,7 +24,7 @@ export default function PageContent(props) {
 
       <Service />
       <center>
-        <h2 class="title">Packages</h2>
+        <h2>Packages</h2>
       </center>
       <Packages
         companyName={props.companyName}

@@ -42,7 +42,10 @@ let signUpDriversSchema = new mongoose.Schema({
   plateNumber: String,
   work: String,
   password: String,
-  isAvailable: Boolean
+  isAvailable: Boolean,
+  nameProduct: Array,
+  productWeight: Array,
+  file: Array
 });
 
 let CompaniesSchema = new mongoose.Schema({
