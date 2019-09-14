@@ -12,7 +12,9 @@ export default class Checkout extends Component {
     nameProduct: "",
     file: null,
     numberOfProducts: "",
-    package: ""
+    package: "",
+    date: "",
+    Status: "Pending"
   };
   handleChange = e => {
     this.setState({
@@ -27,6 +29,18 @@ export default class Checkout extends Component {
   };
   handleSubmit = e => {
     e.preventDefault();
+    let today = new Date();
+    let date =
+      today.getFullYear() +
+      "-" +
+      (today.getMonth() + 1) +
+      "-" +
+      today.getDate();
+    let time =
+      today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    let dateTime = date + " " + time;
+
+    console.log(dateTime);
     const user = {
       name: this.props.location.state.companyName,
       package: this.props.location.state.package,
@@ -36,7 +50,9 @@ export default class Checkout extends Component {
       productWeight: this.state.productWeight,
       price: this.state.price,
       numberOfProducts: this.state.numberOfProducts,
-      file: this.state.file
+      file: this.state.file,
+      Date: dateTime,
+      Status: this.state.Status
     };
     console.log(user);
     axios

@@ -3,7 +3,13 @@ export default class Contact extends Component {
   render() {
     return (
       <div class="CONTACT">
-        <section class="contact pt-100 pb-100" id="contact">
+        <section
+          class="contact pt-100 pb-100"
+          id="contact"
+          style={{
+            height: "100vh"
+          }}
+        >
           <div class="container">
             <div class="row">
               <div class="col-xl-6 mx-auto text-center">

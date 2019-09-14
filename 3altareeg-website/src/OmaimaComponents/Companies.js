@@ -14,7 +14,9 @@ export default class Companies extends Component {
       numberOfProducts,
       productWeight,
       price,
-      file
+      file,
+      Date,
+      Status
     } = this.props.company;
     console.log("order", order);
     console.log("name", name);
@@ -61,7 +63,11 @@ export default class Companies extends Component {
       //   </div>
       <div className="card card-body mb-3" style={style}>
         <h4 style={{ marginTop: "0" }}>
-          {name} Company
+          {name} Company{" "}
+          <span style={{ color: "rgb(145, 154, 163)" }}>
+            {" "}
+            {"("} Submittion Date: {Date} {")"}{" "}
+          </span>
           {` `}
           <i
             class="fas fa-sort-down"
@@ -81,7 +87,8 @@ export default class Companies extends Component {
               Package,
               nameProduct,
               productWeight,
-              file
+              file,
+              "Rejected"
             )}
           />
           <i
@@ -100,7 +107,8 @@ export default class Companies extends Component {
               Package,
               nameProduct,
               productWeight,
-              file
+              file,
+              "Approved"
             )}
           ></i>
         </h4>

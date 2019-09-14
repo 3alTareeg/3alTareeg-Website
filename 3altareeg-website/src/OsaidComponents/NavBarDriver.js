@@ -6,7 +6,7 @@ export default function NavBar(props) {
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div className="container">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/HomeDriver">
             <i class="fas fa-road"></i> ON THE ROAD
           </a>
           <button
@@ -22,17 +22,12 @@ export default function NavBar(props) {
           </button>
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item active">
-                <a className="nav-link" href="/HomeCompanies">
-                  Home
-                  <span className="sr-only">(current)</span>
-                </a>
-              </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
                   About
                 </a>
               </li>
+
               <li className="nav-item">
                 <a className="nav-link" href="#">
                   Services
@@ -44,7 +39,11 @@ export default function NavBar(props) {
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#pablo" style={{ color: "#0cbd9d" }}>
+                <a
+                  class="nav-link"
+                  href="/HomeDriver"
+                  style={{ color: "#0cbd9d" }}
+                >
                   <i
                     class="fas fa-user-circle"
                     style={{ fontSize: "1.3em" }}

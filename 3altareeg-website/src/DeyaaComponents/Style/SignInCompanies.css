@@ -26,7 +26,7 @@
 .SignInCompanies .social_icon span {
   font-size: 60px;
   margin-left: 10px;
-  color: #ffc312;
+  color: #6f94a3;
 }
 
 .SignInCompanies .social_icon span:hover {
@@ -46,7 +46,7 @@
 
 .SignInCompanies .u span {
   width: 50px;
-  background-color: #ffc312;
+  background-color: #6f94a3;
   color: black;
   border: 0 !important;
 }
@@ -69,7 +69,7 @@
 
 .SignInCompanies .login_btn {
   color: black;
-  background-color: #ffc312;
+  background-color: #6f94a3;
   width: 100px;
 }
 

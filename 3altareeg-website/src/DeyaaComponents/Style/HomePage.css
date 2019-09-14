@@ -5,7 +5,7 @@
 }
 
 .HomePage .card__image {
-  max-width: 100% !important;
+  max-width: 100%;
 }
 
 .HomePage {
@@ -14,26 +14,26 @@
   background-repeat: no-repeat;
 }
 .HomePage .containerh {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  height: 100vh !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   /* background: #444; */
 }
 
 .HomePage .cardh {
-  position: relative !important;
+  position: relative;
   background: #333;
-  width: 375px !important;
-  height: 75vh !important;
+  width: 375px;
+  height: 75vh;
   border-radius: 6px;
   padding: 2rem;
   color: #aaa;
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
-  overflow: hidden !important;
+  overflow: hidden;
 }
 .HomePage .card__image-container {
-  margin: -2rem -2rem 1rem -2rem !important;
+  margin: -2rem -2rem 1rem -2rem;
 }
 
 .HomePage .card__line {
@@ -54,13 +54,13 @@
 }
 
 .HomePage .card__content {
-  margin-top: -1rem !important;
-  opacity: 0 !important;
+  margin-top: -1rem;
+  opacity: 0;
   animation: ContentFadeIn 0.8s 1.6s forwards;
 }
 
 .HomePage .card__svg {
-  position: absolute !important;
+  position: absolute;
   left: 0;
   top: 115px;
 }

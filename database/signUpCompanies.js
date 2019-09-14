@@ -46,7 +46,9 @@ let addOrder = (user, cb) => {
         productWeight: user.productWeight,
         numberOfProducts: user.numberOfProducts,
         Package: user.package,
-        file: user.file
+        file: user.file,
+        Date: user.Date,
+        Status: user.Status
       }
     },
     (err, data) => {
@@ -90,7 +92,13 @@ const editRequst = (newRequst, cb) => {
   };
   db.signUpCompanies.update(
     { _id: newRequst.id },
-    { $set: { request: newRequst.request, order: newRequst.order } },
+    {
+      $set: {
+        request: newRequst.request,
+        order: newRequst.order,
+        Status: newRequst.Status
+      }
+    },
     (err, data) => {
       if (err) {
         cb(err);

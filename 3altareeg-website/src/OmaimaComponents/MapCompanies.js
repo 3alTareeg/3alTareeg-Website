@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Companies from "./Companies";
 import axios from "axios";
+import AdminNavBar from "./AdminNavBar";
 
 export default class Mapcompany extends Component {
   state = {
@@ -25,7 +26,8 @@ export default class Mapcompany extends Component {
     Package,
     nameProduct,
     productWeight,
-    file
+    file,
+    Status
   ) => {
     console.log("Executed");
     console.log("requestREACT", request);
@@ -46,7 +48,8 @@ export default class Mapcompany extends Component {
         request,
         order,
         id,
-        Package
+        Package,
+        Status
       })
       .then(response => {
         this.setState({ companyList: response.data });
@@ -75,10 +78,11 @@ export default class Mapcompany extends Component {
     const { updateCompany } = this;
     return (
       <>
+        <AdminNavBar />
         {console.log("", companyList)}
         <div
           className="container"
-          style={{ border: "1px solid rgba(0,0,0,.125)" }}
+          style={{ border: "1px solid rgba(0,0,0,.125)", marginTop: "100px" }}
         >
           <h1 style={{ textAlign: "center" }}>Companies Requests</h1>
           {companyList.map((company, idx) => {

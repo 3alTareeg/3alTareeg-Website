@@ -133,7 +133,7 @@ class SignInCompanies extends Component {
                       />
                     </div>
                     <div className="input-group form-group">
-                      <div className="input-group-prepend">
+                      <div className="input-group-prepend u">
                         <span className="input-group-text">
                           <i className="fas fa-key"></i>
                         </span>

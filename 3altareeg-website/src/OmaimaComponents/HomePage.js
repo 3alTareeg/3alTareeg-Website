@@ -2,10 +2,13 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 // import "./Home.css";
 import "./StyleAdmin/HomeAdmin.css";
+import AdminNavBar from "./AdminNavBar";
+
 export default class Home extends Component {
   render() {
     return (
       <>
+        <AdminNavBar />
         <body>
           <div class="BODY">
             <div class="containerhome">

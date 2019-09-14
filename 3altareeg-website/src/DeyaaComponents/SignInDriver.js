@@ -7,7 +7,15 @@ class SignIn extends Component {
   state = {
     password: "",
     email: "",
-    valid: false
+    valid: false,
+    NAME: "",
+    EMAIL: "",
+    PASSWORD: "",
+    PLATENUMBER: "",
+    WORK: "",
+    NAMEPRODUCT: [],
+    PRODUCTWEIGHT: [],
+    FILE: []
   };
   render() {
     return (
@@ -83,9 +91,34 @@ class SignIn extends Component {
                         this.state
                       );
                       console.log(res.data);
-                      if (res.data.length !== 0)
-                        await this.setState({ valid: true });
-                      else await this.setState({ valid: false });
+                      if (res.data.length !== 0) {
+                        await this.setState({
+                          valid: true,
+                          NAME: res.data[0].name,
+                          EMAIL: res.data[0].email,
+                          PASSWORD: res.data[0].password,
+                          PLATENUMBER: res.data[0].plateNumber,
+                          WORK: res.data[0].work,
+                          NAMEPRODUCT: res.data[0].nameProduct,
+                          PRODUCTWEIGHT: res.data[0].productWeight,
+                          FILE: res.data[0].file
+                        });
+                        window.localStorage.setItem("logedInDriver", "true");
+                        console.log(this.state);
+                        this.props.history.push({
+                          pathname: "/HomeDriver",
+                          state: {
+                            name: this.state.NAME,
+                            email: this.state.EMAIL,
+                            password: this.state.PASSWORD,
+                            plateNumber: this.state.PLATENUMBER,
+                            work: this.state.WORK,
+                            nameProduct: this.state.NAMEPRODUCT,
+                            productWeight: this.state.PRODUCTWEIGHT,
+                            file: this.state.FILE
+                          }
+                        });
+                      } else await this.setState({ valid: false });
                       // e.target.name.value = "";
                       // e.target.password.value = "";
                     }}
@@ -120,6 +153,15 @@ class SignIn extends Component {
                       <input type="checkbox" />
                       Remember Me
                     </div>
+                    {this.state.email !== "" || this.state.password !== "" ? (
+                      this.state.valid ? (
+                        <span style={{ color: "white" }}>VALID </span>
+                      ) : (
+                        <span style={{ color: "red", textAlign: "center" }}>
+                          <h6>Your email or password is incorrect</h6>
+                        </span>
+                      )
+                    ) : null}
                     <div className="form-group">
                       <input
                         type="submit"
@@ -129,6 +171,7 @@ class SignIn extends Component {
                     </div>
                   </form>
                 </div>
+
                 <div className="card-footer">
                   <div className="d-flex justify-content-center links">
                     Don't have an account?
@@ -137,13 +180,6 @@ class SignIn extends Component {
                   <div className="d-flex justify-content-center">
                     <a href="#">Forgot your password?</a>
                   </div>
-                  {this.state.valid ? (
-                    <span style={{ color: "white" }}>VALID </span>
-                  ) : (
-                    <span style={{ color: "red" }}>
-                      Your email or password is incorrect
-                    </span>
-                  )}
                 </div>
               </div>
             </div>
