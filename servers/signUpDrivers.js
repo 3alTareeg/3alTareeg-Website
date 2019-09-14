@@ -2,7 +2,7 @@ const express = require("express");
 var router = express.Router();
 const mongo = require("../database/signUpDrivers");
 
-//To Reach this file, the link should be http://localhost:9000/signUp
+//To Reach this file, the link should be http://localhost:9000/signUpDrivers
 
 router.get("/", (req, res) => {
   res.send("signUp Router Working Fine");

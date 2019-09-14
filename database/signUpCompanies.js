@@ -109,6 +109,19 @@ const editRequst = (newRequst, cb) => {
   );
 };
 
+// _____________
+
+const getCompanyProfile = (Company, cb) => {
+  let USER = {
+    name: Company.name
+  };
+  console.log(USER);
+  db.signUpCompanies.find(USER, (err, data) => {
+    if (err) cb(err);
+    else cb(data);
+  });
+};
+
 module.exports = {
   createUser,
   getUsers,
@@ -116,5 +129,6 @@ module.exports = {
   getCompany,
   getDriver,
   getAllUsers,
-  editRequst
+  editRequst,
+  getCompanyProfile
 };

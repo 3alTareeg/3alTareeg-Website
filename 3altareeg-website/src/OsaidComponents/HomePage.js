@@ -43,7 +43,7 @@ export default class HomePage extends Component {
     // console.log("NOT FOUND");
   }
   render() {
-    // console.log(this.props.location.state);
+    // console.log(this.props.location.state.name);
     // console.log(this.props.location.state.name);
     if (this.state.shouldpass === "false" || localStorage.logedIn === "false") {
       return (
@@ -393,16 +393,20 @@ export default class HomePage extends Component {
     } else
       return (
         <div>
-          <NavBar logOut={this.logOut} />
+          <NavBar
+            logOut={this.logOut}
+            CompanyInfo={this.props.location.state.name}
+            info={this.props.location.state.info}
+          />
           <br />
           <br />
           <Header />
 
           <PageContent
-            companyName={this.props.location.state.name}
-            companyAddress={this.props.location.state.address}
-            companyEmail={this.props.location.state.email}
-            companyPassword={this.props.location.state.password}
+            companyName={this.props.location.state.info.name}
+            companyAddress={this.props.location.state.info.address}
+            companyEmail={this.props.location.state.info.email}
+            companyPassword={this.props.location.state.info.password}
           />
 
           <br />

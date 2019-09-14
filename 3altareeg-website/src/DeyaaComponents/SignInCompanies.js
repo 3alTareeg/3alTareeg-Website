@@ -109,7 +109,8 @@ class SignInCompanies extends Component {
                             name: this.state.NAME,
                             email: this.state.EMAIL,
                             password: this.state.PASSWORD,
-                            address: this.state.ADDRESS
+                            address: this.state.ADDRESS,
+                            info: res.data[0]
                           }
                         });
                       } else await this.setState({ valid: false });

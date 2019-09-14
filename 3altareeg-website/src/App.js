@@ -13,6 +13,7 @@ import MapCompanies from "./OmaimaComponents/MapCompanies";
 import MapDrivers from "./OmaimaComponents/MapDrivers";
 import LoginAdmin from "./OmaimaComponents/LoginAdmin";
 import DriverHome from "./OsaidComponents/DriverHome";
+import CompanyProfile from "./OsaidComponents/CompanyProfile";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Contact from "./OsaidComponents/Contact";
@@ -45,6 +46,7 @@ class App extends Component {
           <Route exact path="/Drivers" component={MapDrivers} />
           <Route exact path="/LoginAdmin" component={LoginAdmin} />
           <Route exact path="/HomeDriver" component={DriverHome} />
+          <Route exact path="/CompanyProfile" component={CompanyProfile} />
         </Router>
         {/* <HomePage /> */}
       </>
