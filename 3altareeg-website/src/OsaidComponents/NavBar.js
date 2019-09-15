@@ -42,11 +42,7 @@ export default function NavBar(props) {
                   About
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Services
-                </a>
-              </li>
+
               <li className="nav-item">
                 <Link
                   className="nav-link"

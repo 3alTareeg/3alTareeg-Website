@@ -221,7 +221,8 @@ export default class Checkout extends Component {
                             name: this.props.location.state.companyName,
                             address: this.props.location.state.companyAddress,
                             email: this.props.location.state.companyEmail,
-                            password: this.props.location.state.companyPassword
+                            password: this.props.location.state.companyPassword,
+                            info: this.props.location.state.info
                           }
                         }}
                       >
