@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import Drivers from "./Drivers";
 import AdminNavBar from "./AdminNavBar";
+import FooterAdmin from "./FooterAdmin";
 export default class Mapdrivers extends Component {
   state = {
     driverList: [],

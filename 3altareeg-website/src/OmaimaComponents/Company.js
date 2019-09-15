@@ -6,6 +6,7 @@ export default class Company extends Component {
     const {
       name,
       request,
+      email,
       order,
       _id,
       Package,
@@ -36,10 +37,13 @@ export default class Company extends Component {
           style={this.state.Show ? { display: "block" } : { display: "none" }}
         >
           <li className="list-group-item">
-            <span style={{ fontWeight: "bold" }}>Package</span>: {Package} Cars
+            <span style={{ fontWeight: "bold" }}> Email: </span> {email}
           </li>
           <li className="list-group-item">
             <span style={{ fontWeight: "bold" }}> Address: </span> {address}
+          </li>
+          <li className="list-group-item">
+            <span style={{ fontWeight: "bold" }}>Package</span>: {Package} Cars
           </li>
           <li className="list-group-item">
             <span style={{ fontWeight: "bold" }}> Name of Product: </span>

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Companies from "./Companies";
 import axios from "axios";
 import AdminNavBar from "./AdminNavBar";
+import FooterAdmin from "./FooterAdmin";
 
 export default class Mapcompany extends Component {
   state = {
@@ -82,7 +83,11 @@ export default class Mapcompany extends Component {
         {console.log("", companyList)}
         <div
           className="container"
-          style={{ border: "1px solid rgba(0,0,0,.125)", marginTop: "100px" }}
+          style={{
+            border: "1px solid rgba(0,0,0,.125)",
+            marginTop: "100px",
+            marginBottom: "450px"
+          }}
         >
           <h1 style={{ textAlign: "center" }}>Companies Requests</h1>
           {companyList.map((company, idx) => {
@@ -95,6 +100,7 @@ export default class Mapcompany extends Component {
             );
           })}
         </div>
+        <FooterAdmin />
       </>
     );
   }

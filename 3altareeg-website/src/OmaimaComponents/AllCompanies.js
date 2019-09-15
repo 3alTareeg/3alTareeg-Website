@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Company from "./Company";
 import axios from "axios";
 import AdminNavBar from "./AdminNavBar";
-
+import FooterAdmin from "./FooterAdmin";
 export default class Mapcompany extends Component {
   state = {
     companyList: []
@@ -34,6 +34,7 @@ export default class Mapcompany extends Component {
             return <Company key={idx} company={company} />;
           })}
         </div>
+        {/* <FooterAdmin /> */}
       </>
     );
   }

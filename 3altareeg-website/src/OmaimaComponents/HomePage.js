@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 // import "./Home.css";
 import "./StyleAdmin/HomeAdmin.css";
 import AdminNavBar from "./AdminNavBar";
+import FooterAdmin from "./FooterAdmin";
 
 export default class Home extends Component {
   render() {
@@ -70,7 +71,10 @@ export default class Home extends Component {
               </Link>
             </div>
           </div>
-          <div class="card w-75" style={{ marginTop: "55px" }}>
+          <div
+            class="card w-75"
+            style={{ marginTop: "55px", marginBottom: "60px" }}
+          >
             <div class="card-body">
               <h5 class="card-title" style={{ fontWeight: "bold" }}>
                 All Companies
@@ -84,6 +88,7 @@ export default class Home extends Component {
             </div>
           </div>
         </div>
+        <FooterAdmin />
       </>
     );
   }
