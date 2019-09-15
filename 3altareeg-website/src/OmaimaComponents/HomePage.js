@@ -77,7 +77,7 @@ export default class Home extends Component {
           >
             <div class="card-body">
               <h5 class="card-title" style={{ fontWeight: "bold" }}>
-                All Companies
+                Companies
               </h5>
               <p class="card-text">
                 In this section you will find all of our companies.
