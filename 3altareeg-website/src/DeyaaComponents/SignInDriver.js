@@ -115,7 +115,8 @@ class SignIn extends Component {
                             work: this.state.WORK,
                             nameProduct: this.state.NAMEPRODUCT,
                             productWeight: this.state.PRODUCTWEIGHT,
-                            file: this.state.FILE
+                            file: this.state.FILE,
+                            info: res.data[0]
                           }
                         });
                       } else await this.setState({ valid: false });

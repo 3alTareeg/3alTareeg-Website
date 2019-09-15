@@ -7,7 +7,7 @@ export default function NavBar(props) {
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div className="container">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand">
             <i class="fas fa-road"></i> ON THE ROAD
           </a>
           <button

@@ -387,10 +387,13 @@ export default class Drivers extends Component {
             <br></br>
             <br></br>
             <br></br>
-            <NavBarDriver logOut={this.logOut} />
+            <NavBarDriver
+              logOut={this.logOut}
+              info={this.props.location.state.info}
+            />
             <div class="alert alert-primary" role="alert">
               <h1 style={{ textAlign: "center", fontWeight: "bold" }}>
-                Welcome {`${this.props.location.state.name}`}
+                Welcome {`${this.props.location.state.info.name}`}
               </h1>
             </div>{" "}
             {/* Style Try */}
@@ -483,7 +486,7 @@ export default class Drivers extends Component {
                         fontSize: ""
                       }}
                     >
-                      {`${this.props.location.state.name}`}
+                      {`${this.props.location.state.info.name}`}
                     </p>
                   </div>
                   <div
@@ -504,7 +507,7 @@ export default class Drivers extends Component {
                         fontSize: ""
                       }}
                     >
-                      {`${this.props.location.state.email}`}
+                      {`${this.props.location.state.info.email}`}
                     </p>
                   </div>
                   <div
@@ -525,7 +528,7 @@ export default class Drivers extends Component {
                         fontSize: ""
                       }}
                     >
-                      {`${this.props.location.state.plateNumber}`}
+                      {`${this.props.location.state.info.plateNumber}`}
                     </p>
                   </div>
                   <div
@@ -544,7 +547,7 @@ export default class Drivers extends Component {
                         color: "#919aa3"
                       }}
                     >
-                      {`${this.props.location.state.work}`}
+                      {`${this.props.location.state.info.work}`}
                     </p>
                   </div>
                 </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
-export default function NavBar(props) {
+export default function NavBarDriver(props) {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -26,7 +26,7 @@ export default function NavBar(props) {
                 <Link
                   className="nav-link"
                   to={{
-                    pathname: "/About",
+                    pathname: "/AboutDriver",
                     state: {
                       info: props.info
                     }
@@ -37,19 +37,27 @@ export default function NavBar(props) {
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Services
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/Contact">
+                <Link
+                  className="nav-link"
+                  to={{
+                    pathname: "/ContactDriver",
+                    state: {
+                      info: props.info
+                    }
+                  }}
+                >
                   Contact
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a
+                <Link
                   class="nav-link"
-                  href="/HomeDriver"
+                  to={{
+                    pathname: "/HomeDriver",
+                    state: {
+                      info: props.info
+                    }
+                  }}
                   style={{ color: "#0cbd9d" }}
                 >
                   <i
@@ -57,7 +65,7 @@ export default function NavBar(props) {
                     style={{ fontSize: "1.3em" }}
                   ></i>
                   <p> &nbsp; Profile</p>
-                </a>
+                </Link>
               </li>
 
               <li class="nav-item">
