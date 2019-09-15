@@ -18,6 +18,7 @@ import AllCompanies from "./OmaimaComponents/AllCompanies";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Contact from "./OsaidComponents/Contact";
+import About from "./OsaidComponents/About";
 
 //WARNING: PLEASE DONT DO ANY CHANGES IN THIS FILE, JUST CALL YOUR COMPONENT HERE TO TEST IF IT WORKS, THEN REMOVE IT.
 
@@ -49,6 +50,7 @@ class App extends Component {
           <Route exact path="/HomeDriver" component={DriverHome} />
           <Route exact path="/CompanyProfile" component={CompanyProfile} />
           <Route exact path="/AllCompanies" component={AllCompanies} />
+          <Route exact path="/About" component={About} />
         </Router>
         {/* <HomePage /> */}
       </>

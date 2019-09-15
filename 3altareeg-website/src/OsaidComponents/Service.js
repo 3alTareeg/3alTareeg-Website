@@ -10,7 +10,7 @@ export default class Service extends Component {
               <div class="col-xl-8 mx-auto text-center">
                 <div class="section-title">
                   <h4>what we do</h4>
-                  <p>
+                  <p style={{ color: "#9a9a9a" }}>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit
                   </p>
                 </div>
@@ -18,30 +18,30 @@ export default class Service extends Component {
             </div>
             <div class="row">
               <div class="col-lg-4 col-md-6">
-                <div class="single-service">
+                <div class="single-service" style={{ border: "none" }}>
                   <i class="fa fa-rocket"></i>
-                  <h4>database</h4>
-                  <p>
+                  <h4>marketing</h4>
+                  <p style={{ color: "#9a9a9a" }}>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
                     quaerat fugit quas veniam perferendis repudiandae sequi.{" "}
                   </p>
                 </div>
               </div>
               <div class="col-lg-4 col-md-6">
-                <div class="single-service">
+                <div class="single-service" style={{ border: "none" }}>
                   <i class="fa fa-camera"></i>
                   <h4>app</h4>
-                  <p>
+                  <p style={{ color: "#9a9a9a" }}>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
                     quaerat fugit quas veniam perferendis repudiandae sequi.{" "}
                   </p>
                 </div>
               </div>
               <div class="col-lg-4 col-md-6">
-                <div class="single-service">
+                <div class="single-service" style={{ border: "none" }}>
                   <i class="fa fa-clock-o"></i>
                   <h4>support</h4>
-                  <p>
+                  <p style={{ color: "#9a9a9a" }}>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
                     quaerat fugit quas veniam perferendis repudiandae sequi.{" "}
                   </p>

@@ -38,9 +38,17 @@ export default function NavBar(props) {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link
+                  className="nav-link"
+                  to={{
+                    pathname: "/About",
+                    state: {
+                      info: props.info
+                    }
+                  }}
+                >
                   About
-                </a>
+                </Link>
               </li>
 
               <li className="nav-item">
