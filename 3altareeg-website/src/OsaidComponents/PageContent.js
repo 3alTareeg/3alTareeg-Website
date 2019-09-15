@@ -11,11 +11,10 @@ export default function PageContent(props) {
             <div class="col-md-8 ml-auto mr-auto text-center">
               <h1>Who we are?</h1>
               <h5 class="description" id="about" name="about">
-                According to the National Oceanic and Atmospheric
-                Administration, Ted, Scambos, NSIDClead scentist, puts the
-                potentially record low maximum sea ice extent tihs year down to
-                low ice extent in the Pacific and a late drop in ice extent in
-                the Barents Sea.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                quaerat fugit quas veniam perferendis repudiandae sequi Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat
+                fugit quas veniam perferendis repudiandae sequi..
               </h5>
             </div>
           </div>

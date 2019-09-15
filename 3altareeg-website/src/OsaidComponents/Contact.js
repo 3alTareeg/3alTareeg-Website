@@ -52,17 +52,17 @@ export default class Contact extends Component {
                   <div class="single-contact">
                     <i class="fa fa-map-marker"></i>
                     <h5>Address</h5>
-                    <p>661 Lefferts, NY 11203, USA</p>
+                    <p>661 Amman, NY 11203, Jordan</p>
                   </div>
                   <div class="single-contact">
                     <i class="fa fa-phone"></i>
                     <h5>Phone</h5>
-                    <p>(+1) 517 397 7100</p>
+                    <p>(+06) 55 187 71</p>
                   </div>
                   <div class="single-contact">
                     <i class="fa fa-envelope"></i>
                     <h5>Email</h5>
-                    <p>infor@personal.com</p>
+                    <p>3alTareeg@gmail.com</p>
                   </div>
                 </div>
               </div>

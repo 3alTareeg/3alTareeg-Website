@@ -3,6 +3,8 @@ import NavBar from "./NavBar";
 import Footer from "./Footer";
 import "./DriverHome.css";
 import axios from "axios";
+import logo from "./pic/Orange.png";
+
 var x = 0;
 export default class CompanyProfile extends Component {
   //   state = {
@@ -68,7 +70,7 @@ export default class CompanyProfile extends Component {
             {/* Style Try */}
             <div class="card" style={{ margin: "auto", border: "none" }}>
               <img
-                src="http://f1.imgci.com/PICTURES/CMS/28500/28513.jpg"
+                src={logo}
                 class="card-img-top"
                 style={{
                   width: "200px",
@@ -251,7 +253,7 @@ export default class CompanyProfile extends Component {
                     </strong>
                   </h2>
                 </div>
-                <h2
+                {/* <h2
                   style={{
                     marginBottom: "15px",
                     paddingBottom: "5px",
@@ -262,7 +264,7 @@ export default class CompanyProfile extends Component {
                   }}
                 >
                   <strong>Your Products</strong>
-                </h2>
+                </h2> */}
                 <div
                   id="product"
                   style={{
@@ -270,7 +272,7 @@ export default class CompanyProfile extends Component {
                     gridTemplateColumns: "auto auto auto"
                   }}
                 >
-                  <li
+                  {/* <li
                     class="list-group-item"
                     style={{
                       border: "none",
@@ -341,7 +343,7 @@ export default class CompanyProfile extends Component {
                         Car Charger for iPhone XS{" "}
                       </p>
                     </div>
-                  </li>
+                  </li> */}
                 </div>
               </div>
             </div>
