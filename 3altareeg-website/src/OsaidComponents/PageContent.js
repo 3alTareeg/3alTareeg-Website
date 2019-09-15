@@ -31,6 +31,7 @@ export default function PageContent(props) {
         companyAddress={props.companyAddress}
         companyEmail={props.companyEmail}
         companyPassword={props.companyPassword}
+        info={props.info}
       />
     </div>
   );

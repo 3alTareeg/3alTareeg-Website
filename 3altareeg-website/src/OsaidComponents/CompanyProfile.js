@@ -56,7 +56,10 @@ export default class CompanyProfile extends Component {
             <br></br>
             <br></br>
             <br></br>
-            <NavBar info={this.state.CompanyData} />
+            <NavBar
+              info={this.state.CompanyData}
+              logOut={this.props.location.state.logOut}
+            />
             <div class="alert alert-primary" role="alert">
               <h1 style={{ textAlign: "center", fontWeight: "bold" }}>
                 Welcome {`${this.props.location.state.companyName}`}

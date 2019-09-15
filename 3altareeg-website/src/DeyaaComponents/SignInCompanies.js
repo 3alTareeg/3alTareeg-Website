@@ -16,6 +16,8 @@ class SignInCompanies extends Component {
   };
   clear = e => {};
   render() {
+    // window.localStorage.setItem("logedIn", "false");
+
     return (
       // <>
       //   <h1>Companies</h1>

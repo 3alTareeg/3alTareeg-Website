@@ -9,7 +9,7 @@ export default class Home extends Component {
     return (
       <>
         <AdminNavBar />
-        <body>
+        {/* <body>
           <div class="BODY">
             <div class="containerhome">
               <div class="cardhome">
@@ -42,7 +42,48 @@ export default class Home extends Component {
               </div>
             </div>
           </div>
-        </body>
+        </body> */}
+        <div className="container">
+          <div class="card w-75" style={{ marginTop: "100px" }}>
+            <div class="card-body">
+              <h5 class="card-title" style={{ fontWeight: "bold" }}>
+                Companies requests
+              </h5>
+              <p class="card-text">
+                In this section you will find all the requests of the companies.
+              </p>
+              <Link to="/Companies" class="btn btn-primary">
+                Click here
+              </Link>
+            </div>
+          </div>
+          <div class="card w-75" style={{ marginTop: "55px" }}>
+            <div class="card-body">
+              <h5 class="card-title" style={{ fontWeight: "bold" }}>
+                Drivers
+              </h5>
+              <p class="card-text">
+                In this section you will find all of our drivers.
+              </p>
+              <Link to="/Drivers" class="btn btn-primary">
+                Click here
+              </Link>
+            </div>
+          </div>
+          <div class="card w-75" style={{ marginTop: "55px" }}>
+            <div class="card-body">
+              <h5 class="card-title" style={{ fontWeight: "bold" }}>
+                All Companies
+              </h5>
+              <p class="card-text">
+                In this section you will find all of our companies.
+              </p>
+              <Link to="/AllCompanies" class="btn btn-primary">
+                Click here
+              </Link>
+            </div>
+          </div>
+        </div>
       </>
     );
   }

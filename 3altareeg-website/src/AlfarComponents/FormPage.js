@@ -66,10 +66,10 @@ export default class Checkout extends Component {
       });
   };
   render() {
-    console.log(this.props.location.state);
+    console.log(this.props.location.state.info);
     return (
       <>
-        <NavBar />
+        <NavBar info={this.props.location.state.info} />
         <div class="Far">
           <div class="container contact">
             <div class="row">

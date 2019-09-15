@@ -83,6 +83,7 @@ export default function NavBar(props) {
                 <p
                   class="nav-link"
                   onClick={() => props.logOut()}
+                  // to="/SignInCompanies"
                   style={{ color: "red", cursor: "pointer" }}
                 >
                   <i

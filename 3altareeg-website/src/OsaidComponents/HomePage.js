@@ -407,6 +407,7 @@ export default class HomePage extends Component {
             companyAddress={this.props.location.state.info.address}
             companyEmail={this.props.location.state.info.email}
             companyPassword={this.props.location.state.info.password}
+            info={this.props.location.state.info}
           />
 
           <br />

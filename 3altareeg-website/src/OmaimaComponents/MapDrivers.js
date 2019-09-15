@@ -98,7 +98,7 @@ export default class Mapdrivers extends Component {
             }}
             // style={{ backgroundColor: "#352d52" }}
           >
-            <h1 style={{ textAlign: "center" }}>Drivers</h1>
+            <h1 style={{ textAlign: "center" }}>Our Drivers</h1>
             {console.log("driver", driverList)}
             {driverList.map((driver, idx) => {
               return (
@@ -166,7 +166,7 @@ export default class Mapdrivers extends Component {
             }}
             // style={{ backgroundColor: "#352d52" }}
           >
-            <h1 style={{ textAlign: "center" }}>Drivers</h1>
+            <h1 style={{ textAlign: "center" }}>Our Drivers</h1>
 
             {this.state.SearchComp.map((driver, idx) => {
               return (
