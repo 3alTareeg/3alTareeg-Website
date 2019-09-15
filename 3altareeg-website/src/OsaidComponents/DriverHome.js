@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import NavBarDriver from "./NavBarDriver";
 import Footer from "./Footer";
 import "./DriverHome.css";
+import RevenueCalculator from "./RevenueCalculator";
 
 export default class Drivers extends Component {
   state = {
@@ -684,6 +685,34 @@ export default class Drivers extends Component {
               </div>
             </div>
           </div>
+          <div
+            class="card"
+            style={{ margin: "auto", border: "none", marginTop: "50px" }}
+          >
+            <div class="list-group list-group-flush" style={{ width: "62%" }}>
+              <div
+                style={{
+                  marginBottom: "20px"
+                }}
+              >
+                <h2
+                  style={{
+                    // borderBottom: "1px solid #e0e0e0",
+                    // marginBottom: "15px",
+                    paddingBottom: "5px",
+                    borderBottom: "1px solid #e0e0e0",
+                    color: "#606468",
+                    textTransform: "uppercase",
+                    letterSpacing: "5px"
+                  }}
+                >
+                  <strong>Simple Revenue Calculator</strong>
+                </h2>
+              </div>
+              <RevenueCalculator />
+            </div>
+          </div>
+
           <Footer />
         </>
       );
