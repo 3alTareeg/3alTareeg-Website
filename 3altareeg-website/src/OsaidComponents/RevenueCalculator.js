@@ -38,7 +38,7 @@ class RevenueCalculator extends Component {
         <div class="input-group mb-3">
           <div class="input-group-prepend">
             <span class="input-group-text" id="inputGroup-sizing-default">
-              Number oF Products You Sold
+              Number Of Products You Sold
             </span>
           </div>
           <input
