@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 class AdminNavBar extends Component {
   render() {
@@ -27,6 +28,20 @@ class AdminNavBar extends Component {
                     Home
                     <span className="sr-only">(current)</span>
                   </a>
+                </li>
+                <li class="nav-item">
+                  <Link
+                    class="nav-link"
+                    // onClick={}
+                    to="/LoginAdmin"
+                    style={{ color: "red", cursor: "pointer" }}
+                  >
+                    <i
+                      class="fas fa-sign-out-alt"
+                      style={{ fontSize: "1.3em" }}
+                    ></i>
+                    <p> &nbsp; Logout</p>
+                  </Link>
                 </li>
               </ul>
             </div>

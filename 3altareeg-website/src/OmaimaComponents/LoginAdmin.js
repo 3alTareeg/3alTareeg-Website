@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 import "./StyleAdmin/Login.css";
 export default class LoginAdmin extends Component {
   state = {
-    username: "omaima",
-    password: "omaima"
+    username: "admin",
+    password: "admin",
+    valid: false
   };
   //  onchange=(e)=>{
   //     if(this.state.username === e.name.username && this.state.password === e.name.password){
@@ -20,7 +21,18 @@ export default class LoginAdmin extends Component {
             <center>
               <div class="middle">
                 <div id="login">
-                  <form>
+                  <form
+                    onSubmit={e => {
+                      e.preventDefault();
+                      if (
+                        e.target.username.value === "admin" &&
+                        e.target.password.value === "admin"
+                      ) {
+                        this.setState({ valid: true });
+                        this.props.history.push("/HomeAdmin");
+                      }
+                    }}
+                  >
                     <p>
                       <span class="fa fa-user"></span>
                       <input
@@ -42,25 +54,25 @@ export default class LoginAdmin extends Component {
                         required
                       />
                     </p>
-                    <Link to="/HomeAdmin">
-                      <div>
-                        <span
-                          style={{
-                            width: "50%",
-                            "text-align": "right",
-                            display: "inline-block"
-                          }}
-                        >
-                          <input
-                            class="inputLogin"
-                            type="submit"
-                            value="Log In"
-                            name="login"
-                            disabled={!this.state.username}
-                          />
-                        </span>
-                      </div>
-                    </Link>
+                    {/* <Link to="/HomeAdmin"> */}
+                    <div>
+                      <span
+                        style={{
+                          // width: "100%",
+                          // "text-align": "right",
+                          display: "inline-block"
+                        }}
+                      >
+                        <input
+                          class="inputLogin"
+                          type="submit"
+                          value="Log In"
+                          name="login"
+                          disabled={!this.state.username}
+                        />
+                      </span>
+                    </div>
+                    {/* </Link> */}
                   </form>
                 </div>
                 <div class="logo">ADMIN</div>
