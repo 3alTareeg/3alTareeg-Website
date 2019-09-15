@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import "./DriverHome.css";
 import axios from "axios";
 import logo from "./pic/Orange.png";
+import NoAccessCompanies from "./NoAccessCompanies";
 
 var x = 0;
 export default class CompanyProfile extends Component {
@@ -12,6 +13,16 @@ export default class CompanyProfile extends Component {
   //   };
   state = {
     CompanyData: {}
+  };
+
+  logOut = async () => {
+    console.log("LOGOUT");
+    await this.setState({
+      //   shouldpass: "false"
+    });
+    // this.props.location.state = await undefined;
+    window.localStorage.setItem("logedIn", "false");
+    this.props.history.push("./SignInCompanies");
   };
 
   componentDidMount() {
@@ -50,7 +61,8 @@ export default class CompanyProfile extends Component {
   //   }
   render() {
     console.log(this.props.location.state);
-    if (x === 0) return <h1>Loading..</h1>;
+    if (localStorage.logedIn === "false") return <NoAccessCompanies />;
+    else if (x === 0) return <h1>Loading..</h1>;
     else
       return (
         <>
@@ -58,10 +70,7 @@ export default class CompanyProfile extends Component {
             <br></br>
             <br></br>
             <br></br>
-            <NavBar
-              info={this.state.CompanyData}
-              logOut={this.props.location.state.logOut}
-            />
+            <NavBar info={this.state.CompanyData} logOut={this.logOut} />
             <div class="alert alert-primary" role="alert">
               <h1 style={{ textAlign: "center", fontWeight: "bold" }}>
                 Welcome {`${this.props.location.state.companyName}`}

@@ -21,6 +21,7 @@ import Contact from "./OsaidComponents/Contact";
 import About from "./OsaidComponents/About";
 import DriverContact from "./OsaidComponents/DriverContact";
 import AboutDriver from "./OsaidComponents/AboutDriver";
+import NoAccess from "./OsaidComponents/NoAccess";
 
 //WARNING: PLEASE DONT DO ANY CHANGES IN THIS FILE, JUST CALL YOUR COMPONENT HERE TO TEST IF IT WORKS, THEN REMOVE IT.
 
@@ -55,6 +56,7 @@ class App extends Component {
           <Route exact path="/About" component={About} />
           <Route exact path="/ContactDriver" component={DriverContact} />
           <Route exact path="/AboutDriver" component={AboutDriver} />
+          <Route exact path="/NoAccess" component={NoAccess} />
         </Router>
         {/* <HomePage /> */}
       </>
