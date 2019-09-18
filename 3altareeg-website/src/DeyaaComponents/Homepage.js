@@ -57,10 +57,8 @@ class HomePage extends Component {
               <div className="card__content">
                 <h1 className="card__title">Driver</h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Soluta dolor praesentium at quod autem omnis, amet eaque unde
-                  perspiciatis adipisci possimus quam facere illo et quisquam
-                  quia earum nesciunt porro.
+                  If you're a driver, join us, and increase your daily profit,
+                  in a safe, and effecient way.
                 </p>
               </div>
             </div>
@@ -94,10 +92,8 @@ class HomePage extends Component {
               <div className="card__content">
                 <h1 className="card__title">Company</h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Soluta dolor praesentium at quod autem omnis, amet eaque unde
-                  perspiciatis adipisci possimus quam facere illo et quisquam
-                  quia earum nesciunt porro.
+                  If you're a company, join us, and display your products, in
+                  our drivers' cars in a safe, and effecient way.
                 </p>
               </div>
             </div>

@@ -37,16 +37,15 @@ export default class Packages extends Component {
             />
 
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
+              <h5 className="card-title">10 Car</h5>
               <p className="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                quaerat fugit quas veniam perferendis repudiandae sequi.
+                This package offers 10 cars to display your product on it.
               </p>
             </div>
             <ul className="list-group list-group-flush">
-              <li className="list-group-item">Cras justo odio</li>
-              <li className="list-group-item">Dapibus ac facilisis in</li>
-              <li className="list-group-item">Vestibulum at eros</li>
+              <li className="list-group-item">10 Cars</li>
+              <li className="list-group-item">24/7 Support</li>
+              <li className="list-group-item">Maximum of 50 Product </li>
             </ul>
             <div className="card-body">
               <Link
@@ -90,16 +89,15 @@ export default class Packages extends Component {
               alt="..."
             />
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
+              <h5 className="card-title">20 Car</h5>
               <p className="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                quaerat fugit quas veniam perferendis repudiandae sequi.
+                This package offers 20 cars to display your product on it.
               </p>
             </div>
             <ul className="list-group list-group-flush">
-              <li className="list-group-item">Cras justo odio</li>
-              <li className="list-group-item">Dapibus ac facilisis in</li>
-              <li className="list-group-item">Vestibulum at eros</li>
+              <li className="list-group-item">20 Cars</li>
+              <li className="list-group-item">24/7 Support</li>
+              <li className="list-group-item">Maximum of 100 Product</li>
             </ul>
             <div className="card-body">
               <Link
@@ -134,16 +132,15 @@ export default class Packages extends Component {
               alt="..."
             />
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
+              <h5 className="card-title">30 Car</h5>
               <p className="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                quaerat fugit quas veniam perferendis repudiandae sequi.
+                This package offers 30 cars to display your product on it.
               </p>
             </div>
             <ul className="list-group list-group-flush">
-              <li className="list-group-item">Cras justo odio</li>
-              <li className="list-group-item">Dapibus ac facilisis in</li>
-              <li className="list-group-item">Vestibulum at eros</li>
+              <li className="list-group-item">30 Cars</li>
+              <li className="list-group-item">24/7 Support</li>
+              <li className="list-group-item">Maximum of 200 Product</li>
             </ul>
             <div className="card-body">
               <Link

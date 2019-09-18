@@ -11,10 +11,9 @@ export default function PageContent(props) {
             <div class="col-md-8 ml-auto mr-auto text-center">
               <h1>Who we are?</h1>
               <h5 class="description" id="about" name="about">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                quaerat fugit quas veniam perferendis repudiandae sequi Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat
-                fugit quas veniam perferendis repudiandae sequi..
+                We are marketing and advertising company that display the
+                companies products in the drivers' cars to the riders in a
+                special way
               </h5>
             </div>
           </div>

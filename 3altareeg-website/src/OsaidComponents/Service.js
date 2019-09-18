@@ -11,7 +11,8 @@ export default class Service extends Component {
                 <div class="section-title">
                   <h4>what we do</h4>
                   <p style={{ color: "#9a9a9a" }}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                    Connecting the companies with the drivers so the company can
+                    display their products in easy way
                   </p>
                 </div>
               </div>
@@ -22,8 +23,7 @@ export default class Service extends Component {
                   <i class="fa fa-rocket"></i>
                   <h4>marketing</h4>
                   <p style={{ color: "#9a9a9a" }}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                    quaerat fugit quas veniam perferendis repudiandae sequi.{" "}
+                    We will market your products in a special and new way.{" "}
                   </p>
                 </div>
               </div>
@@ -32,8 +32,7 @@ export default class Service extends Component {
                   <i class="fa fa-camera"></i>
                   <h4>app</h4>
                   <p style={{ color: "#9a9a9a" }}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                    quaerat fugit quas veniam perferendis repudiandae sequi.{" "}
+                    You can use our easy-to-use application.{" "}
                   </p>
                 </div>
               </div>
@@ -41,10 +40,7 @@ export default class Service extends Component {
                 <div class="single-service" style={{ border: "none" }}>
                   <i class="fa fa-clock-o"></i>
                   <h4>support</h4>
-                  <p style={{ color: "#9a9a9a" }}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                    quaerat fugit quas veniam perferendis repudiandae sequi.{" "}
-                  </p>
+                  <p style={{ color: "#9a9a9a" }}>24/7 hot line support. </p>
                 </div>
               </div>
             </div>
