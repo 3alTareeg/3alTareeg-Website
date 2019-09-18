@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import "./Style/SignInDriver.css";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 class SignUp extends Component {
   state = {
@@ -64,16 +65,16 @@ class SignUp extends Component {
         <div className="SignInDriver">
           <div className="container">
             <div className="d-flex justify-content-center h-100">
-              <div className="card x" style={{ height: "410px" }}>
+              <div className="card x" style={{ height: "450px" }}>
                 <div className="card-header">
                   <h3>Drivers</h3>
                   <div className="d-flex justify-content-end social_icon">
-                    <span>
+                    {/* <span>
                       <i className="fab fa-facebook-square"></i>
                     </span>
                     <span>
                       <i className="fab fa-twitter-square"></i>
-                    </span>
+                    </span> */}
                   </div>
                 </div>
                 <div className="card-body">
@@ -163,7 +164,7 @@ class SignUp extends Component {
                       <input
                         type="password"
                         className="form-control"
-                        placeholder="Enter your Password"
+                        placeholder="Enter your password"
                         name="password"
                       />
                     </div>
@@ -189,7 +190,7 @@ class SignUp extends Component {
                     <div className="input-group form-group">
                       <div
                         className="input-group-prepend"
-                        style={{ width: "140px" }}
+                        style={{ width: "123px" }}
                       >
                         <span
                           style={{ width: "140px" }}
@@ -214,6 +215,15 @@ class SignUp extends Component {
                       />
                     </div>
                   </form>
+                </div>
+                <div className="card-footer">
+                  <div className="d-flex justify-content-center links">
+                    Already have an account?
+                    <Link to="/SignInDrivers">Sign In</Link>
+                  </div>
+                  <div className="d-flex justify-content-center">
+                    {/* <a href="#">Forgot your password?</a> */}
+                  </div>
                 </div>
               </div>
             </div>

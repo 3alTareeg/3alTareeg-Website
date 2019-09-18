@@ -96,7 +96,7 @@ export default class Companies extends Component {
             style={{
               cursor: "pointer",
               float: "right",
-              color: "red",
+              color: "green",
               marginRight: "10px"
             }}
             onClick={updateRequest.bind(

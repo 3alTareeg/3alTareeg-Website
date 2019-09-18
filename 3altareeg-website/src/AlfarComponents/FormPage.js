@@ -180,7 +180,8 @@ export default class Checkout extends Component {
                     </div>
                     <div class="form-group">
                       <label class="control-label col-sm-2" htmlFor="price">
-                        Product Price
+                        Product
+                        <br /> Price
                       </label>
                       <div class="col-sm-10">
                         <input
@@ -189,6 +190,7 @@ export default class Checkout extends Component {
                           onChange={this.handleChange}
                           class="form-control"
                           placeholder="Price (JD)"
+                          min="0"
                         />
                       </div>
                     </div>
@@ -197,7 +199,7 @@ export default class Checkout extends Component {
                         class="control-label col-sm-2"
                         htmlFor="numberOfProducts"
                       >
-                        Product Number:
+                        Product Number
                       </label>
                       <div class="col-sm-10">
                         <input
@@ -206,12 +208,13 @@ export default class Checkout extends Component {
                           onChange={this.handleChange}
                           class="form-control"
                           placeholder="Product Number"
+                          min="1"
                         />
                       </div>
                     </div>
                     <div class="form-group">
                       <label class="control-label col-sm-2" htmlFor="file">
-                        Product Image:
+                        Product Image
                       </label>
                       <div class="col-sm-10">
                         <input

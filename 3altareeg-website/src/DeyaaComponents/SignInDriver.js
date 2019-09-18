@@ -7,7 +7,7 @@ class SignIn extends Component {
   state = {
     password: "",
     email: "",
-    valid: false,
+    valid: true,
     NAME: "",
     EMAIL: "",
     PASSWORD: "",
@@ -62,16 +62,16 @@ class SignIn extends Component {
         <div className="SignInDriver">
           <div className="container">
             <div className="d-flex justify-content-center h-100">
-              <div className="card x">
+              <div className="card x" style={{ height: "330px" }}>
                 <div className="card-header">
                   <h3>Drivers</h3>
                   <div className="d-flex justify-content-end social_icon">
-                    <span>
+                    {/* <span>
                       <i className="fab fa-facebook-square"></i>
                     </span>
                     <span>
                       <i className="fab fa-twitter-square"></i>
-                    </span>
+                    </span> */}
                   </div>
                 </div>
                 <div className="card-body">
@@ -151,13 +151,11 @@ class SignIn extends Component {
                       />
                     </div>
                     <div className="row align-items-center remember">
-                      <input type="checkbox" />
-                      Remember Me
+                      {/* <input type="checkbox" />
+                      Remember Me */}
                     </div>
                     {this.state.email !== "" || this.state.password !== "" ? (
-                      this.state.valid ? (
-                        <span style={{ color: "white" }}>VALID </span>
-                      ) : (
+                      this.state.valid ? null : (
                         <span style={{ color: "red", textAlign: "center" }}>
                           <h6>Your email or password is incorrect</h6>
                         </span>
@@ -179,7 +177,7 @@ class SignIn extends Component {
                     <Link to="/SignUpDrivers">Sign Up</Link>
                   </div>
                   <div className="d-flex justify-content-center">
-                    <a href="#">Forgot your password?</a>
+                    {/* <a href="#">Forgot your password?</a> */}
                   </div>
                 </div>
               </div>

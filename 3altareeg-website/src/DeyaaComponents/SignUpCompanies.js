@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import "./Style/SignUpCompanies.css";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 class SignUpCompanies extends Component {
   state = {
@@ -58,16 +59,16 @@ class SignUpCompanies extends Component {
         <div className="SignInCompanies">
           <div className="container">
             <div className="d-flex justify-content-center h-100">
-              <div className="card x">
+              <div className="card x" style={{ height: "410px" }}>
                 <div className="card-header">
                   <h3>Companies</h3>
                   <div className="d-flex justify-content-end social_icon">
-                    <span>
+                    {/* <span>
                       <i className="fab fa-facebook-square"></i>
                     </span>
                     <span>
                       <i className="fab fa-twitter-square"></i>
-                    </span>
+                    </span> */}
                   </div>
                 </div>
                 <div className="card-body">
@@ -172,7 +173,7 @@ class SignUpCompanies extends Component {
                       <input
                         type="password"
                         className="form-control"
-                        placeholder="Enter your Password"
+                        placeholder="Enter your password"
                         name="password"
                       />
                     </div>
@@ -185,6 +186,15 @@ class SignUpCompanies extends Component {
                       />
                     </div>
                   </form>
+                </div>
+                <div className="card-footer">
+                  <div className="d-flex justify-content-center links">
+                    Already have an account?
+                    <Link to="/SignInCompanies">Sign In</Link>
+                  </div>
+                  <div className="d-flex justify-content-center">
+                    {/* <a href="#">Forgot your password?</a> */}
+                  </div>
                 </div>
               </div>
             </div>

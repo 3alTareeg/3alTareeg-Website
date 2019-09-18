@@ -5,10 +5,11 @@ class RevenueCalculator extends Component {
     nop: 0,
     spp: 0,
     rp: 0,
-    result: 0
+    result: 0,
+    negative: false
   };
-  handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value });
+  handleChange = async e => {
+    await this.setState({ [e.target.name]: e.target.value });
   };
   render() {
     return (
@@ -48,7 +49,8 @@ class RevenueCalculator extends Component {
             aria-describedby="inputGroup-sizing-default"
             onChange={this.handleChange}
             name="nop"
-            placeholder="Number oF Products"
+            placeholder="Number Of Products"
+            min="0"
           />
         </div>
         <div class="input-group mb-3">
@@ -65,6 +67,7 @@ class RevenueCalculator extends Component {
             onChange={this.handleChange}
             name="spp"
             placeholder="Price in JD"
+            min="0"
           />
         </div>
         <div class="input-group mb-3">
@@ -81,16 +84,31 @@ class RevenueCalculator extends Component {
             onChange={this.handleChange}
             name="rp"
             placeholder="Number in Percent"
+            min="0"
           />
+        </div>
+        <div
+          class="input-group-prepend"
+          style={{ width: "100%", color: "red" }}
+        >
+          {this.state.negative ? "Please enter positive values!" : null}
         </div>
         <div class="input-group-prepend">
           <button
             className="form-control"
-            onClick={() =>
+            onClick={() => {
+              if (
+                this.state.nop < 0 ||
+                this.state.spp < 0 ||
+                this.state.rp < 0
+              ) {
+                this.setState({ negative: true });
+                return;
+              }
               this.setState({
                 result: (this.state.nop * this.state.spp * this.state.rp) / 100
-              })
-            }
+              });
+            }}
           >
             Calculate
           </button>
